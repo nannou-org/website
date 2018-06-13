@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	{% include head.html %}
+	<body>
+	{% include gtm_noscript.html %}
+	<!-- logo -->
+	<header>
+		<section>
+	        <a id="logo" href="/">
+					<img src="/assets/logo_full.svg" alt="link to nannou home page" id="logo_image" class="logo">
+	            </a>
+	     	    <nav>
+					<ul>
+						<li><a href="/news.html">News</a></li>
+						<li><a href="https://docs.rs/nannou">Docs</a></li>
+						<!-- <li><a href="/documentation.html">Docs</a></li> -->
+						<li><a href="http://forum.nannou.cc">Forum</a></li>
+						<li><a href="https://github.com/nannou-org/nannou/archive/master.zip">⬇︎ Download <span class="zip">(zip)</span></a></li>
+					</ul>
+				</nav>
+	    </section>
+	</header>
+
+
+	<div class="container">
+	{{ content }}
+	</div><!-- /.container -->
+
+	{% include footer.html %}
+	</body>
+</html>
