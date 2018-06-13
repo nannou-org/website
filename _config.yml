@@ -1,28 +1,23 @@
 title: nannou.cc | Creative coding framework for Rust
 
 author: madkeen
-url: "http://nannou.cc"
-markdown: kramdown
 permalink: /news/:year/:month/:day/:title
-plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-feed
 
 email: contact@nannou.cc
 description: >- # this means to ignore newlines until "baseurl:"
   Nannou is an open source creative coding framework built in Rust for artists, hackers, designers and devs to express themselves with simple, fast, reliable, portable code.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://nannou.cc" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: nannou
-github_username:
+github_username: nannou-org
 
 # Build settings
 markdown: kramdown
 theme: minima
-plugins:
-  - jekyll-feed
 
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
