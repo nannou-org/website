@@ -31,7 +31,7 @@ module.exports = {
         {
             resolve: `gatsby-plugin-google-analytics`,
             options: {
-                trackingId: 'UA-140407225-1',
+                trackingId: 'UA-117502197-2',
                 // Defines where to place the tracking script - `true` in the head and `false` in the body
                 head: false,
                 // Setting this parameter is optional but Germany requires it!
