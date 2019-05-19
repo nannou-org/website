@@ -8,6 +8,11 @@ import SEO from "../components/seo"
 import styles from './home.module.scss'
 
 import logo from '../images/nannou_logo_alpha.png' // Tell Webpack this JS file uses this image
+import vulkan_icon from '../images/vulkan_symbol.png'
+import led_icon from '../images/leds_symbol.png'
+import lasers_icon from '../images/laser_symbol.png'
+import audio_icon from '../images/speaker_symbol.png'
+import gui_icon from '../images/gui_symbol.png'
 
 export const query = graphql`
   query {
@@ -29,7 +34,7 @@ const IndexPage = ({data}, props) => {
             //<SEO title="Home" keywords={["Nannou", "About", "Education", "Presentations", "Performances", "Installations"]}/>
             
             <div className={styles.grid_container}>
-                {/* <div className={styles.row_1}></div> */}
+
                 <div className={styles.nested_row1}>
                     <div className={styles.header}>
                         <Header />
@@ -41,9 +46,47 @@ const IndexPage = ({data}, props) => {
                     <div className={styles.banner_description}>
                         <h4>An open-source creative-coding framework for Rust</h4>
                     </div>
-                    
                 </div>
-                <div>Box 2 </div>
+
+
+                <div className={styles.nested_row2}>
+                    <div className={styles.icons}> 
+                      <div> 
+                        <img src={vulkan_icon} alt="vulkan_icon" /> 
+                        <div className={styles.icons_text}>
+                          <p><b>Graphics</b></p>
+                        </div>
+                      </div>
+                      <div> 
+                        <img src={led_icon} alt="led_icon" /> 
+                        <div className={styles.icons_text}>
+                          <p><b>LEDs</b></p>
+                        </div>
+                      </div>
+                      <div> 
+                        <img src={lasers_icon} alt="lasers_icon" />
+                        <div className={styles.icons_text}>
+                          <p><b>Lasers</b></p>
+                        </div>
+                      </div>
+                      <div> 
+                        <img src={audio_icon} alt="audio_icon" /> 
+                        <div className={styles.icons_text}>
+                          <p><b>Audio</b></p>
+                        </div>
+                      </div>
+                      <div> 
+                        <img src={gui_icon} alt="gui_icon" /> 
+                        <div className={styles.icons_text}>
+                          <p><b>GUI</b></p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className={styles.description}> 
+                        <p>Nannou is a library that aims to make it easy for artists to express themselves with <b>simple, fast, reliable</b> code.</p>
+                    </div>
+                </div>
                 <div>Box 3</div>
                 <div>Box 4</div>
                 <div>Box 5</div>
