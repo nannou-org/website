@@ -1,2 +1,3 @@
-# website
-nannou.cc | website
+### Joshua Batty Personal Website
+
+Built using Gatsby and ReactJS. Deployed using Netlify 

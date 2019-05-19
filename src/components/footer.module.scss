@@ -1,0 +1,15 @@
+.footer {
+    margin-top: 3rem;
+    margin: 0 auto;
+    font-size: 0.8rem;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(3rem, 1fr));
+    grid-gap: 1rem;
+    margin: 0 auto;
+    width: 12rem; 
+    padding-top: 3rem;
+    padding-bottom: 0.5rem;
+}
