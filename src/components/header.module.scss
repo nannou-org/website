@@ -2,21 +2,16 @@
     padding: 1rem 0 2rem;
 }
 
-.title {
-    color: #2b2b2b;
-    font-size: 3rem;
-    text-decoration: none;
-}
-
 .nav-list {
     display: flex;
     list-style-type: none;
     margin: 0;
+    float: right;
 }
 
 .nav-item {
     color: #525252;
-    font-size: .9rem;
+    font-size: .8rem;
     margin-right: 1.3rem;
     text-decoration: none;
 }
