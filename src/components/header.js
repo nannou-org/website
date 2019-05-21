@@ -12,7 +12,9 @@ const Header = () => {
                         <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/">HOME</Link>
                     </li>
                     <li>
-                        <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/documentation">DOCUMENTATION</Link>
+                        <a className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} href="https://docs.rs/nannou" aria-label="Donate" target="_blank" rel="noopener noreferrer">
+                            DOCUMENTATION
+                        </a>
                     </li>
                     <li>
                         <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/guide">GUIDE</Link>

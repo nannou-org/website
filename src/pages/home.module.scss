@@ -2,7 +2,8 @@
     display: grid;
     /* grid-template-columns: 1fr 1fr; */
     grid-template-columns:repeat(2, 1fr);
-    grid-template-rows: 3fr 3fr 2fr 2fr 2fr .5fr;
+
+    grid-template-rows: 3fr 2fr 2fr 2fr 2fr .5fr;
     grid-row-gap: 1em;
 }
 
@@ -45,8 +46,8 @@
 
 .nested_row2 {
     display: grid;
-    grid-template-rows: 2fr 1fr;
-    padding: 1em;
+    grid-template-rows: 2fr .5fr;
+    padding: 1em; 
     grid-row-gap: 1.5em;
     grid-column: 1/3;
 
@@ -55,12 +56,12 @@
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         object-fit: absolute;
         max-width: 700px;
-        max-height: 500px;
+        max-height: 200px;
         margin-left: 5%;
         margin-right: 5%;
         grid-column-gap: 4em;
         justify-self: center;
-        align-self: center;
+        padding: 2em;
 
         .icons_text {
             vertical-align: middle;
@@ -73,7 +74,6 @@
         margin-left: 10%;
         margin-right: 10%;
         display: table-cell; 
-        vertical-align: middle; 
         text-align: center;
     }
 }
@@ -84,10 +84,6 @@
     align-self: center;
 }
 
-.row3_image {
-
-}
-
 .right_row_text {
     margin-left: 15%; 
     margin-right: 5%;
@@ -95,15 +91,22 @@
     text-align: right;
 }
 
-.row4_image {
-    background-image: url(../images/nannou_code_example.jpg);
+.row3_image {
+    background-image: url(../images/test1.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
-    //background-position: 40%;
+    background-size: cover;
+}
+
+.row4_image {
+    background-image: url(../images/test2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .row5_image {
-    
+    background-image: url(../images/test3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .footer_row {
@@ -111,14 +114,14 @@
     grid-column: 1/3;
 }
 
-.nested_row1 > div {
-   // border: #333 1px solid;
-}
+// .nested_row2 > div {
+//     border: #333 1px solid;
+// }
 
-.grid_container > div {
-    border: #333 1px solid;   
-}
+// .grid_container > div {
+//     border: #333 1px solid;   
+// }
 
-.grid_container > div:nth-child(odd){
-    border: #333 1px solid;
-}
+// .grid_container > div:nth-child(odd){
+//     border: #333 1px solid;
+// }
