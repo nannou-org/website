@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 import Header from "../components/header"
+import Footer from "../components/footer"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styles from './home.module.scss'
@@ -31,9 +32,9 @@ export const query = graphql`
 const IndexPage = ({data}, props) => {
     return (
         //<Layout>
-            //<SEO title="Home" keywords={["Nannou", "About", "Education", "Presentations", "Performances", "Installations"]}/>
             
             <div className={styles.grid_container}>
+                <SEO title="Home" keywords={["Nannou", "About", "Education", "Presentations", "Performances", "Installations"]}/>
 
                 <div className={styles.nested_row1}>
                     <div className={styles.header}>
@@ -114,7 +115,9 @@ const IndexPage = ({data}, props) => {
                 
 
 
-                <div>Box 11</div>
+                <div className={styles.footer_row}>
+                    <Footer />
+                </div>
 
             </div>
 

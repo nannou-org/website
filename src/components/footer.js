@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
-import footerStyles from './footer.module.scss'
+import styles from './footer.module.scss'
+import logo from '../images/nannou_logo_alpha.png' // Tell Webpack this JS file uses this image
 
 const Footer = () => {
     const data = useStaticQuery(graphql`
@@ -14,8 +15,8 @@ const Footer = () => {
     `)
 
     return (
-        <footer className={footerStyles.footer}>
-            <div className={footerStyles.links}> 
+        <footer className={styles.footer}>
+            <div className={styles.links}> 
                 <a href="https://github.com/nannou-org/nannou" aria-label="Github" target="_blank" rel="noopener noreferrer">
                     Github  
                 </a>
@@ -27,11 +28,15 @@ const Footer = () => {
                 <a href="https://docs.rs/nannou/" aria-label="Docs" target="_blank" rel="noopener noreferrer">
                     Docs  
                 </a>
-
-                
             </div>
 
-            <p>Copyright © {data.site.siteMetadata.author} 2019</p>
+            <div className={styles.nannou_logo}>
+                <img src={logo} alt="nannou_logo" /> 
+            </div>
+
+            <div className={styles.copyright}>
+                <p>Copyright © {data.site.siteMetadata.author} 2019</p>
+            </div>
 
         </footer>
     )

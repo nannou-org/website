@@ -1,15 +1,36 @@
 .footer {
-    margin-top: 3rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
     margin: 0 auto;
     font-size: 0.8rem;
+    //margin-top: 5em;
 }
 
 .links {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(3rem, 1fr));
     grid-gap: 1rem;
-    margin: 0 auto;
     width: 12rem; 
-    padding-top: 3rem;
-    padding-bottom: 0.5rem;
+    vertical-align: middle; 
+    text-align: center;
+    margin-top: 1em;
+    
+    a{
+        text-decoration: none;
+        color: #2b2b2b;
+    }
+    
+}
+
+
+.nannou_logo {
+    object-fit: absolute;
+    max-width: 40px;
+    max-height: 40px;
+    justify-self: center;
+}
+
+.copyright {
+    vertical-align: middle; 
+    text-align: center; 
 }
