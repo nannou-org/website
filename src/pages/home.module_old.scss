@@ -1,7 +1,9 @@
-.grid_container_top {
+.grid_container {
     display: grid;
-    grid-template-columns:repeat(1, 1fr);
-    grid-template-rows: 3fr 2fr;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns:repeat(2, 1fr);
+
+    grid-template-rows: 3fr 2fr 2fr 2fr 2fr .5fr;
     grid-row-gap: 1em;
 }
 
@@ -11,6 +13,7 @@
     padding: 1em;
     grid-row-gap: 1.5em;
     grid-column: 1/3;
+
     background-image: url(../images/nannou_banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -37,8 +40,6 @@
     .banner_description {
         justify-self: end;
         align-self: start;
-        max-width: 85%;
-        text-align: end;
     }
 }
 
@@ -56,12 +57,11 @@
         object-fit: absolute;
         max-width: 700px;
         max-height: 200px;
-        grid-column-gap: 10%;
-        
-        padding-top: 2em;
-        padding-right: 10%;
-        padding-left: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
+        grid-column-gap: 4em;
         justify-self: center;
+        padding: 2em;
 
         .icons_text {
             vertical-align: middle;
@@ -70,35 +70,25 @@
     }
     
     .description {
-        margin: auto;
-        max-width: 85%;
+        //margin-bottom: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+        display: table-cell; 
         text-align: center;
-        float: none;
     }
 }
 
-.grid_container_middle {
-    display: grid;
-    /* grid-template-columns: 1fr 1fr; */
-    grid-template-columns:repeat(2, 1fr);
-
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-row-gap: 4em;
-    margin-top: 2em;
-}
-
-
-.left_row_text1 {
+.left_row_text {
     margin-left: 5%; 
     margin-right: 15%;
     align-self: center;
 }
 
-
-.left_row_text2 {
-    margin-left: 5%; 
-    margin-right: 15%;
+.right_row_text {
+    margin-left: 15%; 
+    margin-right: 5%;
     align-self: center;
+    text-align: right;
 }
 
 .row3_image {
@@ -124,60 +114,14 @@
     grid-column: 1/3;
 }
 
-/* condition for screen size minimum of 500px */
-@media (max-width:700px) {
-
-    /* your conditional / responsive CSS inside this condition */
-  
-    .grid_container_middle { 
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-row-gap: 1em;
-    }
-
-    .left_row_text1 {
-        margin-left: 10%; 
-        margin-right: 10%;
-        order: 1;
-    }
-    .row3_image {
-        order: 2;
-    }
-    .right_row_text {
-        margin-left: 10%; 
-        margin-right: 10%;
-        order: 3;
-    }
-    .row4_image {
-        order: 4;
-    }
-    .left_row_text2 {
-        margin-left: 10%; 
-        margin-right: 10%;
-        order: 5;
-    }
-    .row5_image {
-        order: 6;
-    }
-}
-
-@media (min-width:701px) {
-    .right_row_text {
-        margin-left: 15%; 
-        margin-right: 5%;
-        align-self: center;
-        text-align: right;
-    }
-}
-
 // .nested_row2 > div {
 //     border: #333 1px solid;
 // }
 
-// .grid_container_middle > div {
+// .grid_container > div {
 //     border: #333 1px solid;   
 // }
 
-// .grid_container_middle > div:nth-child(odd){
+// .grid_container > div:nth-child(odd){
 //     border: #333 1px solid;
 // }

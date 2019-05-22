@@ -3,7 +3,7 @@
     grid-template-rows: 1fr 1fr 1fr;
     margin: 0 auto;
     font-size: 0.8rem;
-    //margin-top: 5em;
+    margin-top: 5em;
 }
 
 .links {
@@ -13,6 +13,7 @@
     width: 12rem; 
     vertical-align: middle; 
     text-align: center;
+    justify-self: center;
     margin-top: 1em;
     
     a{

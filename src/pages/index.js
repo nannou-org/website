@@ -32,88 +32,86 @@ export const query = graphql`
 const IndexPage = ({data}, props) => {
     return (
         //<Layout>
-            
-            <div className={styles.grid_container}>
-                <SEO title="Home" keywords={["Nannou", "About", "Education", "Presentations", "Performances", "Installations"]}/>
+            <div> 
+              <div className={styles.grid_container_top}>
+                  <SEO title="Home" keywords={["Nannou", "About", "Education", "Presentations", "Performances", "Installations"]}/>
 
-                <div className={styles.nested_row1}>
-                    <div className={styles.header}>
-                        <Header />
-                            {props.children}
-                    </div>
-                    <div className={styles.nannou_logo}>
-                      <img src={logo} alt="nannou_logo" /> 
-                    </div>
-                    <div className={styles.banner_description}>
-                        <h4>An open-source creative-coding framework for Rust</h4>
-                    </div>
-                </div>
+                  <div className={styles.nested_row1}>
+                      <div className={styles.header}>
+                          <Header />
+                              {props.children}
+                      </div>
+                      <div className={styles.nannou_logo}>
+                        <img src={logo} alt="nannou_logo" /> 
+                      </div>
+                      <div className={styles.banner_description}>
+                          <h4>An open-source creative-coding framework for Rust</h4>
+                      </div>
+                  </div>
 
 
-                <div className={styles.nested_row2}>
-                    <div className={styles.icons}> 
-                      <div> 
-                        <img src={vulkan_icon} alt="vulkan_icon" /> 
-                        <div className={styles.icons_text}>
-                          <p><b>Graphics</b></p>
+                  <div className={styles.nested_row2}>
+                      <div className={styles.icons}> 
+                        <div> 
+                          <img src={vulkan_icon} alt="vulkan_icon" /> 
+                          <div className={styles.icons_text}>
+                            <p><b>Graphics</b></p>
+                          </div>
+                        </div>
+                        <div> 
+                          <img src={led_icon} alt="led_icon" /> 
+                          <div className={styles.icons_text}>
+                            <p><b>LEDs</b></p>
+                          </div>
+                        </div>
+                        <div> 
+                          <img src={lasers_icon} alt="lasers_icon" />
+                          <div className={styles.icons_text}>
+                            <p><b>Lasers</b></p>
+                          </div>
+                        </div>
+                        <div> 
+                          <img src={audio_icon} alt="audio_icon" /> 
+                          <div className={styles.icons_text}>
+                            <p><b>Audio</b></p>
+                          </div>
+                        </div>
+                        <div> 
+                          <img src={gui_icon} alt="gui_icon" /> 
+                          <div className={styles.icons_text}>
+                            <p><b>GUI</b></p>
+                          </div>
                         </div>
                       </div>
-                      <div> 
-                        <img src={led_icon} alt="led_icon" /> 
-                        <div className={styles.icons_text}>
-                          <p><b>LEDs</b></p>
-                        </div>
+
+                      <div className={styles.description}> 
+                          <p>Nannou is a library that aims to make it easy for artists to express themselves with <b>simple, fast, reliable</b> code.</p>
                       </div>
-                      <div> 
-                        <img src={lasers_icon} alt="lasers_icon" />
-                        <div className={styles.icons_text}>
-                          <p><b>Lasers</b></p>
-                        </div>
-                      </div>
-                      <div> 
-                        <img src={audio_icon} alt="audio_icon" /> 
-                        <div className={styles.icons_text}>
-                          <p><b>Audio</b></p>
-                        </div>
-                      </div>
-                      <div> 
-                        <img src={gui_icon} alt="gui_icon" /> 
-                        <div className={styles.icons_text}>
-                          <p><b>GUI</b></p>
-                        </div>
-                      </div>
-                    </div>
+                  </div>
+              </div>
 
-                    <div className={styles.description}> 
-                        <p>Nannou is a library that aims to make it easy for artists to express themselves with <b>simple, fast, reliable</b> code.</p>
-                    </div>
-                </div>
-                
-                <div className={styles.left_row_text}>
-                    <h4>Batteries Included</h4>
-                    <p>One of the beauties of being a creative coder is that we have the potential to create works in a wide range of domains. Nannou aims to give equal priority to a full suite of creative I/O including graphics, multi-windowing, audio, lasers, lighting and more.</p>
-                </div>
-                <div className={styles.row3_image}> </div>
+              <div className={styles.grid_container_middle}>  
+                  <div className={styles.left_row_text1}>
+                      <h4>Batteries Included</h4>
+                      <p>One of the beauties of being a creative coder is that we have the potential to create works in a wide range of domains. Nannou aims to give equal priority to a full suite of creative I/O including graphics, multi-windowing, audio, lasers, lighting and more.</p>
+                  </div>
+                  <div className={styles.row3_image}> </div>
 
-                <div className={styles.row4_image}> </div>
+                  <div className={styles.row4_image}> </div>
 
-                <div className={styles.right_row_text}>
-                    <h4>A fast, modern language</h4>
-                    <p>When experimenting with the cutting edge in audiovisual processing high performance becomes a necessity. When performing live or creating long-running installations reliability becomes equally important. Rust ticks these boxes and more.</p>
-                </div>
+                  <div className={styles.right_row_text}>
+                      <h4>A fast, modern language</h4>
+                      <p>When experimenting with the cutting edge in audiovisual processing high performance becomes a necessity. When performing live or creating long-running installations reliability becomes equally important. Rust ticks these boxes and more.</p>
+                  </div>
 
-                <div className={styles.left_row_text}>
-                    <h4>Open Source & Liberally Licensed</h4>
-                    <p>Access to these technologies is often expensive and locked behind proprietary systems. We believe in democratising this space by open sourcing Nannou for everyone to use.</p>
-                </div>
-                <div className={styles.row5_image}> </div> 
-                
+                  <div className={styles.left_row_text2}>
+                      <h4>Open Source & Liberally Licensed</h4>
+                      <p>Access to these technologies is often expensive and locked behind proprietary systems. We believe in democratising this space by open sourcing Nannou for everyone to use.</p>
+                  </div>
+                  <div className={styles.row5_image}> </div> 
+              </div>
 
-
-                <div className={styles.footer_row}>
-                    <Footer />
-                </div>
-
+              <Footer />
             </div>
 
             
