@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from "../components/seo"
+import styles from './posts.module.scss'
 
 export const query = graphql`
     query($slug: String!) {
@@ -34,9 +35,11 @@ const Posts = ({data}) => {
     return (
         <Layout>
             <SEO title={frontmatter.title} description={excerpt} keywords={frontmatter.tags} image={image}></SEO>
-            <h1>{frontmatter.title}</h1>
-            <p>{frontmatter.date}</p>
-            <div dangerouslySetInnerHTML={{ __html: html}}></div>
+            <div className={styles.post}>
+                <h1>{frontmatter.title}</h1>
+                <p>{frontmatter.date}</p>
+                <div dangerouslySetInnerHTML={{ __html: html}}></div>
+            </div>
         </Layout>
     ) 
 }
