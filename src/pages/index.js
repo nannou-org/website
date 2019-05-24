@@ -52,36 +52,26 @@ const IndexPage = ({data}, props) => {
 
                   <div className={styles.nested_row2}>
                       <div className={styles.icons}> 
-                        <div> 
+                        <div className={styles.vk_image}> 
                           <img src={vulkan_icon} alt="vulkan_icon" /> 
-                          <div className={styles.icons_text}>
-                            <p><b>Graphics</b></p>
-                          </div>
                         </div>
                         <div> 
                           <img src={led_icon} alt="led_icon" /> 
-                          <div className={styles.icons_text}>
-                            <p><b>LEDs</b></p>
-                          </div>
                         </div>
                         <div> 
                           <img src={lasers_icon} alt="lasers_icon" />
-                          <div className={styles.icons_text}>
-                            <p><b>Lasers</b></p>
-                          </div>
                         </div>
                         <div> 
                           <img src={audio_icon} alt="audio_icon" /> 
-                          <div className={styles.icons_text}>
-                            <p><b>Audio</b></p>
-                          </div>
                         </div>
                         <div> 
-                          <img src={gui_icon} alt="gui_icon" /> 
-                          <div className={styles.icons_text}>
-                            <p><b>GUI</b></p>
-                          </div>
+                          <img src={gui_icon} alt="gui_icon" />
                         </div>
+                        <div className={styles.icons_text}><b>Graphics</b></div>
+                        <div className={styles.icons_text}><b>LEDs</b></div>
+                        <div className={styles.icons_text}><b>Lasers</b></div>
+                        <div className={styles.icons_text}><b>Audio</b></div>
+                        <div className={styles.icons_text}><b>GUI</b></div>
                       </div>
 
                       <div className={styles.description}> 
