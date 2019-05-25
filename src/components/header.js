@@ -17,7 +17,7 @@ const Header = () => {
                         </a>
                     </li>
                     <li>
-                        <a className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} href="www.guide.nannou.cc" aria-label="Guide" target="_blank" rel="noopener noreferrer">
+                        <a className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} href="https://www.guide.nannou.cc" aria-label="Guide" target="_blank" rel="noopener noreferrer">
                             GUIDE
                         </a>
                     </li>
