@@ -17,7 +17,9 @@ const Header = () => {
                         </a>
                     </li>
                     <li>
-                        <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/guide">GUIDE</Link>
+                        <a className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} href="https://www.guide.nannou.cc" aria-label="Guide" target="_blank" rel="noopener noreferrer">>
+                            GUIDE
+                        </a>
                     </li>
                     <li>
                         <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/posts">POSTS</Link>
