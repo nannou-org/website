@@ -19,6 +19,10 @@ import video1 from '../videos/190422.mp4'
 import video2 from '../videos/190412.mp4'
 import video3 from '../videos/190221.mp4'
 
+import video1_poster from '../videos/190422.jpg'
+import video2_poster from '../videos/190412.jpg'
+import video3_poster from '../videos/190221.jpg'
+
 export const query = graphql`
   query {
     file(relativePath: { eq: "images/nannou_logo_alpha.png" }) {
@@ -89,13 +93,13 @@ const IndexPage = ({data}, props) => {
                       <p>One of the beauties of being a creative coder is that we have the potential to create works in a wide range of domains. Nannou aims to give equal priority to a full suite of creative I/O including graphics, multi-windowing, audio, lasers, lighting and more.</p>
                   </div>
                   <div className={styles.row3_video}> 
-                    <video loop="true" autoplay="autoplay" muted>
-                      <source src={video1} type="video/mp4" id="bgvid" />
+                    <video loop="true" autoplay="autoplay" muted poster={video1_poster}>
+                      <source src={video1} type="video/mp4" />
                     </video>
                   </div>
 
                   <div className={styles.row4_video}> 
-                    <video loop="true" autoplay="autoplay" muted>
+                    <video loop="true" autoplay="autoplay" muted poster={video2_poster}>
                       <source src={video2} type="video/mp4" />
                     </video>
                   </div>
@@ -111,7 +115,7 @@ const IndexPage = ({data}, props) => {
                   </div>
 
                   <div className={styles.row5_video}> 
-                    <video loop="true" autoplay="autoplay" muted>
+                    <video loop="true" autoplay="autoplay" muted poster={video3_poster}>
                       <source src={video3} type="video/mp4" />
                     </video>
                   </div> 

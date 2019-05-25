@@ -13,7 +13,7 @@ const Header = () => {
                     </li>
                     <li>
                         <a className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} href="https://docs.rs/nannou" aria-label="Donate" target="_blank" rel="noopener noreferrer">
-                            DOCUMENTATION
+                            DOCS
                         </a>
                     </li>
                     <li>
