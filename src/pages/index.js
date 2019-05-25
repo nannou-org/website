@@ -90,7 +90,7 @@ const IndexPage = ({data}, props) => {
                   </div>
                   <div className={styles.row3_video}> 
                     <video loop="true" autoplay="autoplay" muted>
-                      <source src={video1} type="video/mp4" />
+                      <source src={video1} type="video/mp4" id="bgvid" />
                     </video>
                   </div>
 
