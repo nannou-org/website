@@ -15,6 +15,10 @@ import lasers_icon from '../images/laser_symbol.png'
 import audio_icon from '../images/speaker_symbol.png'
 import gui_icon from '../images/gui_symbol.png'
 
+import video1 from '../videos/190422.mp4'
+import video2 from '../videos/190412.mp4'
+import video3 from '../videos/190221.mp4'
+
 export const query = graphql`
   query {
     file(relativePath: { eq: "images/nannou_logo_alpha.png" }) {
@@ -84,9 +88,17 @@ const IndexPage = ({data}, props) => {
                       <h4>Batteries Included</h4>
                       <p>One of the beauties of being a creative coder is that we have the potential to create works in a wide range of domains. Nannou aims to give equal priority to a full suite of creative I/O including graphics, multi-windowing, audio, lasers, lighting and more.</p>
                   </div>
-                  <div className={styles.row3_image}> </div>
+                  <div className={styles.row3_video}> 
+                    <video loop="true" autoplay="autoplay" muted>
+                      <source src={video1} type="video/mp4" />
+                    </video>
+                  </div>
 
-                  <div className={styles.row4_image}> </div>
+                  <div className={styles.row4_video}> 
+                    <video loop="true" autoplay="autoplay" muted>
+                      <source src={video2} type="video/mp4" />
+                    </video>
+                  </div>
 
                   <div className={styles.right_row_text}>
                       <h4>A fast, modern language</h4>
@@ -97,7 +109,12 @@ const IndexPage = ({data}, props) => {
                       <h4>Open Source & Liberally Licensed</h4>
                       <p>Access to these technologies is often expensive and locked behind proprietary systems. We believe in democratising this space by open sourcing Nannou for everyone to use.</p>
                   </div>
-                  <div className={styles.row5_image}> </div> 
+
+                  <div className={styles.row5_video}> 
+                    <video loop="true" autoplay="autoplay" muted>
+                      <source src={video3} type="video/mp4" />
+                    </video>
+                  </div> 
               </div>
 
               <Footer />
