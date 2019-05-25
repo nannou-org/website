@@ -16,12 +16,13 @@ import audio_icon from '../images/speaker_symbol.png'
 import gui_icon from '../images/gui_symbol.png'
 
 import video1 from '../videos/190422.mp4'
-import video2 from '../videos/190412.mp4'
-import video3 from '../videos/190221.mp4'
+import video2 from '../videos/190221.mp4'
+import video3 from '../videos/190412.mp4'
 
 import video1_poster from '../videos/190422.jpg'
-import video2_poster from '../videos/190412.jpg'
-import video3_poster from '../videos/190221.jpg'
+import video2_poster from '../videos/190221.jpg'
+import video3_poster from '../videos/190412.jpg'
+
 
 export const query = graphql`
   query {
