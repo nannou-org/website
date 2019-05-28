@@ -202,6 +202,19 @@
     }
 }
 
+.credits {
+    padding-bottom: 1em;
+    font-size: 12px;
+    align-self: self-start;
+    vertical-align: middle;
+    text-align: center;
+
+    a {
+        color: #525252;
+        text-decoration: none;
+    }
+}
+
 // .nested_row2 > div {
 //     border: #333 1px solid;
 // }
