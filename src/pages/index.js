@@ -9,11 +9,11 @@ import SEO from "../components/seo"
 import styles from './home.module.scss'
 
 import logo from '../images/nannou_logo_alpha.png' // Tell Webpack this JS file uses this image
-import vulkan_icon from '../images/vulkan_symbol.png'
-import led_icon from '../images/leds_symbol.png'
-import lasers_icon from '../images/laser_symbol.png'
-import audio_icon from '../images/speaker_symbol.png'
-import gui_icon from '../images/gui_symbol.png'
+import vulkan_icon from '../images/icons/vulkan_symbol.jpg'
+import led_icon from '../images/icons/leds_symbol.jpg'
+import lasers_icon from '../images/icons/laser_symbol.jpg'
+import audio_icon from '../images/icons/speaker_symbol.jpg'
+import gui_icon from '../images/icons/gui_symbol.jpg'
 
 import video1 from '../videos/190422.mp4'
 import video2 from '../videos/190221.mp4'
