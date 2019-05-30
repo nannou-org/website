@@ -24,20 +24,6 @@ import video2_poster from '../videos/190221.jpg'
 import video3_poster from '../videos/190412.jpg'
 
 
-export const query = graphql`
-  query {
-    file(relativePath: { eq: "images/nannou_logo_alpha.png" }) {
-      childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
-
 const IndexPage = ({data}, props) => {
     return (
             <div> 
@@ -75,11 +61,11 @@ const IndexPage = ({data}, props) => {
                         <div> 
                           <img src={gui_icon} alt="gui_icon" />
                         </div>
-                        <div className={styles.icons_text}><b>Graphics</b></div>
-                        <div className={styles.icons_text}><b>LEDs</b></div>
-                        <div className={styles.icons_text}><b>Lasers</b></div>
-                        <div className={styles.icons_text}><b>Audio</b></div>
-                        <div className={styles.icons_text}><b>GUI</b></div>
+                        <div className={styles.icons_text}><h6>Graphics</h6></div>
+                        <div className={styles.icons_text}><h6>LEDs</h6></div>
+                        <div className={styles.icons_text}><h6>Lasers</h6></div>
+                        <div className={styles.icons_text}><h6>Audio</h6></div>
+                        <div className={styles.icons_text}><h6>GUI</h6></div>
                       </div>
 
                       <div className={styles.description}> 
