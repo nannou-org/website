@@ -80,10 +80,15 @@ const IndexPage = ({data}, props) => {
                       <p>One of the beauties of being a creative coder is that we have the potential to create works in a wide range of domains. Nannou aims to give equal priority to a full suite of creative I/O including graphics, multi-windowing, audio, lasers, lighting and more.</p>
                   </div>
                   <div className={styles.row3_video}> 
+                  
+                    
+                      {/* <iframe scrolling="no" src="https://player.vimeo.com/video/297548369?autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> */}
+                    
                     <video loop="true" autoplay="autoplay" muted poster={video1_poster}>
                       <source src={video1} type="video/mp4" />
                     </video>
                   </div>
+
 
                   <div className={styles.row4_video}> 
                     <video loop="true" autoplay="autoplay" muted poster={video2_poster}>
