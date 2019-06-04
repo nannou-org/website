@@ -6,3 +6,7 @@
 
 // You can delete this file if you're not using it
 require("typeface-inter")
+
+// Load a code block theme from Prism JS
+//require("prismjs/themes/prism-tomorrow.css")
+require("./src/templates/prism-nannou.css")
