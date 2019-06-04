@@ -26,14 +26,13 @@ Normally, we aim to publish far more regularly and
 incrementally, however this release involved some significant changes and we
 wanted to do our best to get them right.
 
-*TODO: Link these to the sub-headings below.*
 
-- Vulkan Graphics
-- Simpler API
-- LASER Support
-- The Guide
-- What's Next?
-- Join Us!
+- [Vulkan Graphics](#Vulkan-Graphics)
+- [Simpler API](#Simpler-API)
+- [LASER Support](#LASER-Support)
+- [The Guide](#The-Guide)
+- [What's Next?](#Whats-Next)
+- [Join Us!](#Join-Us)
 
 ## Vulkan Graphics
 
