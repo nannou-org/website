@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
+import BackgroundImage from 'gatsby-background-image'
 
 import Header from "../components/header"
 import Footer from "../components/footer"
@@ -8,21 +9,71 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styles from './home.module.scss'
 
-import logo from '../images/nannou_logo_alpha.png' // Tell Webpack this JS file uses this image
-import vulkan_icon from '../images/icons/vulkan_symbol.jpg'
-import led_icon from '../images/icons/leds_symbol.jpg'
-import lasers_icon from '../images/icons/laser_symbol.jpg'
-import audio_icon from '../images/icons/speaker_symbol.jpg'
-import gui_icon from '../images/icons/gui_symbol.jpg'
+import vulkan_icon from '../images/icons/vulkan_symbol.jpg' // Tell Webpack this JS file uses this image
 
 import video1 from '../videos/190422.mp4'
 import video2 from '../videos/190221.mp4'
 import video3 from '../videos/190412.mp4'
 
-import video1_poster from '../videos/190422.jpg'
-import video2_poster from '../videos/190221.jpg'
-import video3_poster from '../videos/190412.jpg'
+export const iconImage = graphql`
+  fragment iconImage on File {
+    childImageSharp {
+      fixed(width: 50, height: 50) {
+        ...GatsbyImageSharpFixed
+      }
+    }
+  }
+`
 
+export const posterImage = graphql`
+  fragment posterImage on File {
+    childImageSharp {
+      fluid(maxWidth: 150, maxHeight: 150) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+`
+
+export const query = graphql`
+  query {
+    banner_image: file(relativePath: { eq: "images/nannou_banner.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 3360, maxHeight: 940) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    logo_image: file(relativePath: { eq: "images/nannou_logo_alpha.png" }) {
+      childImageSharp {
+        fixed(width: 100, height: 100) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    icon2: file(relativePath: { eq: "images/icons/leds_symbol.jpg" }) {
+      ...iconImage
+    }
+    icon3: file(relativePath: { eq: "images/icons/laser_symbol.jpg" }) {
+      ...iconImage
+    }
+    icon4: file(relativePath: { eq: "images/icons/speaker_symbol.jpg" }) {
+      ...iconImage
+    }
+    icon5: file(relativePath: { eq: "images/icons/gui_symbol.jpg" }) {
+      ...iconImage
+    }
+    poster1: file(relativePath: { eq: "videos/190422.jpg" }) {
+      ...posterImage
+    }
+    poster2: file(relativePath: { eq: "videos/190221.jpg" }) {
+      ...posterImage
+    }
+    poster3: file(relativePath: { eq: "videos/190412.jpg" }) {
+      ...posterImage
+    }
+  }
+`
 
 const IndexPage = ({data}, props) => {
     return (
@@ -30,19 +81,20 @@ const IndexPage = ({data}, props) => {
               <div className={styles.grid_container_top}>
                   <SEO title="Home" keywords={["Nannou", "About", "Education", "Presentations", "Performances", "Installations"]}/>
 
-                  <div className={styles.nested_row1}>
+                  <BackgroundImage 
+                      fluid={data.banner_image.childImageSharp.fluid}
+                      className={styles.nested_row1}>
                       <div className={styles.header}>
                           <Header />
                               {props.children}
                       </div>
                       <div className={styles.nannou_logo}>
-                        <img src={logo} alt="nannou_logo" /> 
+                        <Img fixed={data.logo_image.childImageSharp.fixed} />
                       </div>
                       <div className={styles.banner_description}>
                           <h4>An open-source creative-coding framework for Rust</h4>
                       </div>
-                  </div>
-
+                  </BackgroundImage>
 
                   <div className={styles.nested_row2}>
                       <div className={styles.icons}> 
@@ -50,16 +102,16 @@ const IndexPage = ({data}, props) => {
                           <img src={vulkan_icon} alt="vulkan_icon" /> 
                         </div>
                         <div> 
-                          <img src={led_icon} alt="led_icon" /> 
+                          <Img fixed={data.icon2.childImageSharp.fixed} /> 
                         </div>
                         <div> 
-                          <img src={lasers_icon} alt="lasers_icon" />
+                          <Img fixed={data.icon3.childImageSharp.fixed} />
                         </div>
                         <div> 
-                          <img src={audio_icon} alt="audio_icon" /> 
+                          <Img fixed={data.icon4.childImageSharp.fixed} />
                         </div>
                         <div> 
-                          <img src={gui_icon} alt="gui_icon" />
+                          <Img fixed={data.icon5.childImageSharp.fixed} />
                         </div>
                         <div className={styles.icons_text}><h6>Graphics</h6></div>
                         <div className={styles.icons_text}><h6>LEDs</h6></div>
@@ -80,18 +132,14 @@ const IndexPage = ({data}, props) => {
                       <p>One of the beauties of being a creative coder is that we have the potential to create works in a wide range of domains. Nannou aims to give equal priority to a full suite of creative I/O including graphics, multi-windowing, audio, lasers, lighting and more.</p>
                   </div>
                   <div className={styles.row3_video}> 
-                  
-                    
-                      {/* <iframe scrolling="no" src="https://player.vimeo.com/video/297548369?autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> */}
-                    
-                    <video loop="true" autoplay="autoplay" muted poster={video1_poster}>
+                    <video loop="true" autoplay="autoplay" muted poster={data.poster1.childImageSharp.fluid}>
                       <source src={video1} type="video/mp4" />
                     </video>
                   </div>
 
 
                   <div className={styles.row4_video}> 
-                    <video loop="true" autoplay="autoplay" muted poster={video2_poster}>
+                    <video loop="true" autoplay="autoplay" muted poster={data.poster2.childImageSharp.fluid}>
                       <source src={video2} type="video/mp4" />
                     </video>
                   </div>
@@ -107,7 +155,7 @@ const IndexPage = ({data}, props) => {
                   </div>
 
                   <div className={styles.row5_video}> 
-                    <video loop="true" autoplay="autoplay" muted poster={video3_poster}>
+                    <video loop="true" autoplay="autoplay" muted poster={data.poster3.childImageSharp.fluid}>
                       <source src={video3} type="video/mp4" />
                     </video>
                   </div> 

@@ -3,8 +3,9 @@ import { graphql, useStaticQuery } from 'gatsby'
 import styles from './footer.module.scss'
 import logo from '../images/nannou_logo_alpha.png' // Tell Webpack this JS file uses this image
 
-const Footer = () => {
-    const data = useStaticQuery(graphql`
+
+const Footer = ({data}) => {
+    const site_data = useStaticQuery(graphql`
         query {
             site {
                 siteMetadata {
@@ -35,7 +36,7 @@ const Footer = () => {
             </div>
 
             <div className={styles.copyright}>
-                <p>Copyright © {data.site.siteMetadata.author} 2019</p>
+                <p>Copyright © {site_data.site.siteMetadata.author} 2019</p>
             </div>
 
         </footer>
