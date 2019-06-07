@@ -113,11 +113,11 @@ const IndexPage = ({data}, props) => {
                         <div> 
                           <Img fixed={data.icon5.childImageSharp.fixed} />
                         </div>
-                        <div className={styles.icons_text}><h6>Graphics</h6></div>
-                        <div className={styles.icons_text}><h6>LEDs</h6></div>
-                        <div className={styles.icons_text}><h6>Lasers</h6></div>
-                        <div className={styles.icons_text}><h6>Audio</h6></div>
-                        <div className={styles.icons_text}><h6>GUI</h6></div>
+                        <div className={styles.icons_text}><h2>Graphics</h2></div>
+                        <div className={styles.icons_text}><h2>LEDs</h2></div>
+                        <div className={styles.icons_text}><h2>Lasers</h2></div>
+                        <div className={styles.icons_text}><h2>Audio</h2></div>
+                        <div className={styles.icons_text}><h2>GUI</h2></div>
                       </div>
 
                       <div className={styles.description}> 
