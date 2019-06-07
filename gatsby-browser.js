@@ -7,6 +7,10 @@
 // You can delete this file if you're not using it
 require("typeface-inter")
 
-// Load a code block theme from Prism JS
-//require("prismjs/themes/prism-tomorrow.css")
-require("./src/templates/prism-nannou.css")
+export const onClientEntry = () => {  
+    // IntersectionObserver polyfill for gatsby-background-image (Safari, IE)
+    if (typeof window.IntersectionObserver === `undefined`) {
+      import(`intersection-observer`)
+      console.log(`# IntersectionObserver is polyfilled!`)
+    }
+}
