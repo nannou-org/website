@@ -1,5 +1,5 @@
 ---
-title:  "Nannou 0.9 - Vulkan, LASERs and more!"
+title:  "Nannou Update - Vulkan, LASERs and more!"
 date:  "30-05-2019"
 featured: "images/grain_reordering_patterns.jpg"
 tags: [
@@ -12,6 +12,8 @@ tags: [
 ]
 ---
 
+<br>
+
 **Nannou** is an open source, creative coding framework for Rust. Today marks
 one of the biggest milestones for the project since its launch - the release of
 version **0.9**.
@@ -22,22 +24,34 @@ already been using the work-in-progress 0.9 branch in our personal and
 commercial work over the past few months, it is a relief to finally be able to
 land and share the progress with the wider world!
 
+<br>
+
+<iframe src="https://player.vimeo.com/video/340933400?autoplay=1&loop=1&autopause=0?muted=1&background=1" width="640" height="270" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+<i>Daily Sketch #821 by <a href="https://www.instagram.com/mactuitui/">Mactuitui</a> using nannou.</i>
+
+<br>
+
 Normally, we aim to publish far more regularly and
 incrementally, however this release involved some significant changes and we
 wanted to do our best to get them right.
 
-
 - [Vulkan Graphics](#Vulkan-Graphics)
-- [Simpler API](#Simpler-API)
+- [Simpler API](#Simpler-Event-API)
 - [LASER Support](#LASER-Support)
 - [The Guide](#The-Guide)
 - [What's Next?](#Whats-Next)
 - [Join Us!](#Join-Us)
 
+<br>
+
 ## Vulkan Graphics
 
 The largest change is without a doubt the switch from OpenGL to
 [Vulkan](https://www.khronos.org/vulkan/) for handling cross-platform graphics.
+
+![nannou_plus_vulkan](nannou_plus_vulkan.png)
+
 Our primary reasons for making the switch are:
 
 - Gaining support for compiling and running languages other than GLSL (e.g.
@@ -53,6 +67,14 @@ The change has been large enough that we decided to dedicate a follow-up post
 with all the juicy details, including how we automated the installation process
 for macOS, some of the trade-offs involved in leaving OpenGL, our experience
 working with vulkano, future plans for graphics in nannou and more.
+
+<iframe src="https://player.vimeo.com/video/340928061?autoplay=1&loop=1&autopause=0?muted=1&background=1" width="640" height="270" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+*Nannou + Vulkan in action. A Magic Mirror Installation for Museums Victoria by
+[MindBuffer](https://mindbuffer.net).*
+
+<br>
+<br>
 
 ## Simpler Event API
 
@@ -133,6 +155,8 @@ You can find an example demonstrating nearly all application and window events
 available in nannou
 [here](https://github.com/nannou-org/nannou/blob/master/examples/all_functions.rs).
 
+<br>
+
 ## LASER Support
 
 One of the things that separates a creative coding environment from a game
@@ -141,6 +165,10 @@ game engine might revolve around a single window and stereo sound, digital
 artists often need access to multiple windows for projection mapping or large
 displays, *n*-channel spatial audio for exhibitions, networked DMX for
 controlling lighting fixtures and much more.
+
+<iframe src="https://player.vimeo.com/video/340422829?autoplay=1&loop=1&autopause=0?muted=1&background=1" width="640" height="180" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+*LATTICE by [MindBuffer](https://www.mindbuffer.net/), developed using nannou.*
 
 One of our personal favourite mediums to work with is LASER projection. It's
 hard to beat the immersive feeling of being engulfed in a beam of light so
@@ -157,6 +185,8 @@ tricky details such as draw order optimisation, inertia reduction, blanking
 delays and sharp angle delays - features that are difficult to find in existing
 free and open-source solutions.
 
+![nannou_laser_api](nannou_laser_api.png)
+
 If you happen to have a LASER projector and a DAC supporting the Ether Dream
 protocol, you can begin playing with **lasy** and **nannou** side-by-side by
 checking out [these
@@ -164,6 +194,8 @@ examples](https://github.com/nannou-org/nannou/tree/master/examples/laser).
 Otherwise, you can find more info on **lasy** at [the
 README](https://github.com/nannou-org/lasy) and on
 [docs.rs](https://docs.rs/lasy).
+
+<br>
 
 ## The Guide
 
@@ -180,6 +212,8 @@ began working on in order to achieve this is to create a nannou "oracle" of
 sorts in the form of [an online guide](https://guide.nannou.cc/). The guide aims
 to be a one-stop-shop for all information, tips and tricks someone could desire
 related to nannou.
+
+[![nannou_guide_preview](nannou_guide_preview.png)](https://guide.nannou.cc)
 
 Currently, the guide features a ["Why
 Nannou?"](https://guide.nannou.cc/why_nannou.html) chapter outlining the goals
@@ -201,6 +235,8 @@ info on this soon!
 You can check out the guide in its current state
 [here](https://guide.nannou.cc). If you are interested in contributing, you can
 find the repo [here](https://github.com/nannou-org/guide).
+
+<br>
 
 ## What's Next?
 
@@ -250,6 +286,8 @@ guide to get an idea of what else we have planned, or visit the [issue
 tracker](https://github.com/nannou-org/nannou/issues) to find more detailed
 plans or suggest your own.
 
+<br>
+
 ## Join Us!
 
 Since we announced the project almost a year ago, nannou has grown from a small
@@ -258,4 +296,10 @@ three-person team into a small community. Feel free to join us!
 Most of us hang out in the [nannou slack](https://nannou.slack.com) and would be
 more than happy to meet you and chat about all things nannou :)
 
-You can get started with nannou [here](https://guide.nannou.cc/)!
+<br>
+<br>
+<center>Get started with nannou <b><a href="https://guide.nannou.cc/">here</a></b>!</center>
+<br>
+<br>
+
+
