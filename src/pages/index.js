@@ -92,7 +92,7 @@ const IndexPage = ({data}, props) => {
                         <Img fixed={data.logo_image.childImageSharp.fixed} />
                       </div>
                       <div className={styles.banner_description}>
-                          <h4>An open-source creative-coding framework for Rust</h4>
+                          <h1>An open-source creative-coding framework for Rust</h1>
                       </div>
                   </BackgroundImage>
 
@@ -121,14 +121,14 @@ const IndexPage = ({data}, props) => {
                       </div>
 
                       <div className={styles.description}> 
-                          <p>Nannou is a library that aims to make it easy for artists to express themselves with <b>simple, fast, reliable</b> code.</p>
+                          <p>Nannou is a library that aims to make it easy for artists to express themselves with <strong>simple, fast, reliable</strong> code.</p>
                       </div>
                   </div>
               </div>
 
               <div className={styles.grid_container_middle}>  
                   <div className={styles.left_row_text1}>
-                      <h4>Batteries Included</h4>
+                      <h2>Batteries Included</h2>
                       <p>One of the beauties of being a creative coder is that we have the potential to create works in a wide range of domains. Nannou aims to give equal priority to a full suite of creative I/O including graphics, multi-windowing, audio, lasers, lighting and more.</p>
                   </div>
                   <div className={styles.row3_video}> 
@@ -145,12 +145,12 @@ const IndexPage = ({data}, props) => {
                   </div>
 
                   <div className={styles.right_row_text}>
-                      <h4>A fast, modern language</h4>
+                      <h2>A fast, modern language</h2>
                       <p>When experimenting with the cutting edge in audiovisual processing high performance becomes a necessity. When performing live or creating long-running installations reliability becomes equally important. Rust ticks these boxes and more.</p>
                   </div>
 
                   <div className={styles.left_row_text2}>
-                      <h4>Open Source & Liberally Licensed</h4>
+                      <h2>Open Source & Liberally Licensed</h2>
                       <p>Access to these technologies is often expensive and locked behind proprietary systems. We believe in democratising this space by open sourcing Nannou for everyone to use.</p>
                   </div>
 
