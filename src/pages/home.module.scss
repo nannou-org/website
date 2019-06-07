@@ -16,7 +16,7 @@
     background-size: cover;
     background-position: 40%;
 
-    h4 {
+    h1 {
         font-size: 1.25em;
     }
 
@@ -98,6 +98,10 @@
     grid-template-rows: 20em 20em 20em;// 1fr 1fr 1fr;
     grid-row-gap: 0em;
     margin-top: 2em;
+
+    h2 {
+        font-size: 1.25em;
+    }
 }
 
 
