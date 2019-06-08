@@ -128,7 +128,7 @@ const IndexPage = ({data}, props) => {
               <div className={styles.grid_container_middle}>  
                   <div className={styles.left_row_text1}>
                       <h2>Batteries Included</h2>
-                      <p>One of the beauties of being a creative coder is that we have the potential to create works in a wide range of domains. Nannou aims to give equal priority to a full suite of creative I/O including graphics, multi-windowing, audio, lasers, lighting and more.</p>
+                      <p>One of the beauties of being a creative coder is that we have the potential to create works in a wide range of domains. Nannou aims to give equal priority to a full suite of creative I/O including graphics, multi-windowing, audio, lasers, lighting <a href="https://guide.nannou.cc/why_nannou.html#goals">and more</a>.</p>
                   </div>
                   <div className={styles.row3_video}>
                     <div className={styles.row3_video_container}>
@@ -151,12 +151,12 @@ const IndexPage = ({data}, props) => {
 
                   <div className={styles.right_row_text}>
                       <h2>A fast, modern language</h2>
-                      <p>When experimenting with the cutting edge in audiovisual processing high performance becomes a necessity. When performing live or creating long-running installations reliability becomes equally important. Rust ticks these boxes and more.</p>
+                      <p>When experimenting with the cutting edge in audiovisual processing high performance becomes a necessity. When performing live or creating long-running installations reliability becomes equally important. Rust ticks these boxes <a href="https://guide.nannou.cc/why_nannou.html#why-rust">and more</a>.</p>
                   </div>
 
                   <div className={styles.left_row_text2}>
                       <h2>Open Source & Liberally Licensed</h2>
-                      <p>Access to these technologies is often expensive and locked behind proprietary systems. We believe in democratising this space by open sourcing Nannou for everyone to use.</p>
+                      <p>Access to these technologies is often expensive and locked behind proprietary systems. We believe in democratising this space by open sourcing Nannou for everyone to use. You can find the code <a href="https://github.com/nannou-org/nannou">here</a>.</p>
                   </div>
 
                   <div className={styles.row5_video}>
@@ -167,6 +167,21 @@ const IndexPage = ({data}, props) => {
                       </div>
                     </div>
                   </div> 
+
+                  <div className={styles.row6_video}>
+                    <div className={styles.row6_video_container}>
+                      <div className={styles.row6_video_inner}>
+                        <iframe src="https://player.vimeo.com/video/341102804?autoplay=1&loop=1&autopause=0?muted=1&background=1" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+                        </iframe>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className={styles.right_row_text2}>
+                      <h2>Join Us!</h2>
+                      <p>You can get started with nannou by visiting <a href="https://guide.nannou.cc">the guide</a>. If you need some help or simply feel like hanging out with some fellow creative coders you are welcome to join us at <a href="https://communityinviter.com/apps/nannou/nannou-slack">the nannou slack</a>.</p>
+                  </div>
+
               </div>
               <Footer />
             </div>
