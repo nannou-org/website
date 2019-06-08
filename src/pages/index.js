@@ -5,7 +5,6 @@ import BackgroundImage from 'gatsby-background-image'
 
 import Header from "../components/header"
 import Footer from "../components/footer"
-import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styles from './home.module.scss'
 
