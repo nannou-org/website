@@ -1,12 +1,18 @@
 import React from 'react'
+import Img from 'gatsby-image'
 import { graphql, useStaticQuery } from 'gatsby'
 import styles from './footer.module.scss'
-import logo from '../images/nannou_logo_alpha.png' // Tell Webpack this JS file uses this image
-
 
 const Footer = ({data}) => {
     const site_data = useStaticQuery(graphql`
         query {
+            logo_image: file(relativePath: { eq: "images/nannou_logo_alpha.png" }) {
+                childImageSharp {
+                    fixed(width: 40, height: 40) {
+                        ...GatsbyImageSharpFixed
+                    }
+                }
+            }
             site {
                 siteMetadata {
                     author
@@ -32,7 +38,7 @@ const Footer = ({data}) => {
             </div>
 
             <div className={styles.nannou_logo}>
-                <img src={logo} alt="nannou_logo" /> 
+                <Img fixed={site_data.logo_image.childImageSharp.fixed} alt="nannou_logo" />
             </div>
 
             <div className={styles.copyright}>
