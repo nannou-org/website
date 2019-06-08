@@ -89,7 +89,7 @@ const IndexPage = ({data}, props) => {
                               {props.children}
                       </div>
                       <div className={styles.nannou_logo}>
-                        <Img fixed={data.logo_image.childImageSharp.fixed} />
+                        <Img fixed={data.logo_image.childImageSharp.fixed} alt="nannou_logo" />
                       </div>
                       <div className={styles.banner_description}>
                           <h1>An open-source creative-coding framework for Rust</h1>
@@ -99,19 +99,19 @@ const IndexPage = ({data}, props) => {
                   <div className={styles.nested_row2}>
                       <div className={styles.icons}> 
                         <div className={styles.vk_image}> 
-                          <img src={vulkan_icon} alt="vulkan_icon" /> 
+                          <img src={vulkan_icon} alt="Vulkan_icon" /> 
                         </div>
                         <div> 
-                          <Img fixed={data.icon2.childImageSharp.fixed} /> 
+                          <Img fixed={data.icon2.childImageSharp.fixed} alt="LEDs_icon" /> 
                         </div>
                         <div> 
-                          <Img fixed={data.icon3.childImageSharp.fixed} />
+                          <Img fixed={data.icon3.childImageSharp.fixed} alt="Lasers_icon" />
                         </div>
                         <div> 
-                          <Img fixed={data.icon4.childImageSharp.fixed} />
+                          <Img fixed={data.icon4.childImageSharp.fixed} alt="Audio_icon" />
                         </div>
                         <div> 
-                          <Img fixed={data.icon5.childImageSharp.fixed} />
+                          <Img fixed={data.icon5.childImageSharp.fixed} alt="GUI_icon" />
                         </div>
                         <div className={styles.icons_text}><h2>Graphics</h2></div>
                         <div className={styles.icons_text}><h2>LEDs</h2></div>
