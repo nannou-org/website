@@ -74,7 +74,6 @@ working with vulkano, future plans for graphics in nannou and more.
 [MindBuffer](https://mindbuffer.net).*
 
 <br>
-<br>
 
 ## Simpler Event API
 
