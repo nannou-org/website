@@ -42,9 +42,12 @@ const Footer = ({data}) => {
             </div>
 
             <div className={styles.copyright}>
-                <p>Copyright © {site_data.site.siteMetadata.author} 2019</p>
+                <p>
+                    Copyright © {site_data.site.siteMetadata.author} 2019
+                    <br></br>
+                    Sketches by <a href="https://www.instagram.com/mactuitui/" aria-label="Guide" target="_blank" rel="noopener noreferrer"> MacTuiTui</a>
+                </p>
             </div>
-
         </footer>
     )
 }
