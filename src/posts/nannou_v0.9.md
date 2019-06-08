@@ -177,9 +177,9 @@ like you can touch! That said, access to the necessary hardware and software
 required to start playing with these tools yourself can be expensive and laced
 with frustrating, proprietary licensing.
 
-Version **0.9** brings with it [**lasy**](https://github.com/nannou-org/lasy) -
+Version **0.9** brings with it [**nannou_laser**](https://github.com/nannou-org/nannou_laser) -
 a new crate dedicated to easy access to well optimised, LASER projector DAC
-streams. **Lasy** is our attempt to begin democratising this space at the
+streams. **nannou_laser** is our attempt to begin democratising this space at the
 software level. The crate features a suite of optimisation passes to account for
 tricky details such as draw order optimisation, inertia reduction, blanking
 delays and sharp angle delays - features that are difficult to find in existing
@@ -188,12 +188,11 @@ free and open-source solutions.
 ![nannou_laser_api](nannou_laser_api.png)
 
 If you happen to have a LASER projector and a DAC supporting the Ether Dream
-protocol, you can begin playing with **lasy** and **nannou** side-by-side by
-checking out [these
+protocol, you can begin playing with **nannou_laser** by checking out [these
 examples](https://github.com/nannou-org/nannou/tree/master/examples/laser).
-Otherwise, you can find more info on **lasy** at [the
-README](https://github.com/nannou-org/lasy) and on
-[docs.rs](https://docs.rs/lasy).
+Otherwise, you can find more info on **nannou_laser** at [the
+README](https://github.com/nannou-org/nannou_laser) and on
+[docs.rs](https://docs.rs/nannou_laser).
 
 <br>
 
