@@ -1,6 +1,6 @@
 ---
 title:  "Nannou Update - Vulkan, LASERs and more!"
-date:  "30-05-2019"
+date:  "09-06-2019"
 featured: "../images/nannou_update_featured.jpg"
 tags: [
     "Nannou",
@@ -293,8 +293,9 @@ plans or suggest your own.
 Since we announced the project almost a year ago, nannou has grown from a small
 three-person team into a small community. Feel free to join us!
 
-Most of us hang out in the [nannou slack](https://nannou.slack.com) and would be
-more than happy to meet you and chat about all things nannou :)
+Most of us hang out in the [nannou
+slack](https://communityinviter.com/apps/nannou/nannou-slack) and would be more
+than happy to meet you and chat about all things nannou :)
 
 <br>
 <br>
