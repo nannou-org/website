@@ -1,7 +1,7 @@
 ---
 title:  "Hello Nannou!"
 date:  "13-06-2018"
-featured: "images/grain_reordering_patterns.jpg"
+featured: "../images/nannou_logo_alpha.png"
 tags: [
     "Nannou",
     "Rust",
