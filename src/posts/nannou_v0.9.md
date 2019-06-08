@@ -1,7 +1,7 @@
 ---
 title:  "Nannou Update - Vulkan, LASERs and more!"
 date:  "30-05-2019"
-featured: "images/grain_reordering_patterns.jpg"
+featured: "../images/nannou_update_featured.jpg"
 tags: [
     "Nannou",
     "Rust",
