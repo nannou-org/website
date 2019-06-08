@@ -92,6 +92,8 @@ const IndexPage = ({data}, props) => {
                               {props.children}
                       </div>
 
+                      <div></div>
+
                       <div className={styles.nannou_logo}>
                         <Img fixed={data.logo_image.childImageSharp.fixed} alt="nannou_logo" />
                       </div>

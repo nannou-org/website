@@ -7,7 +7,7 @@
 
 .nested_row1 {
     display: grid;
-    grid-template-rows: 1fr  3fr 2fr;
+    grid-template-rows: 1fr 0.15fr 3fr 2fr;
     padding: 1em;
     grid-row-gap: 1.5em;
     grid-column: 1/3;
@@ -42,7 +42,7 @@
 }
 
 .row1_video_container {
-    background: #eee;
+    background: #ffffff;
     height: 100%;
     width: 100%;
     overflow: hidden;
@@ -50,14 +50,16 @@
     position: relative;
 }
 .row1_video_inner {
-    background: #ffcccc;
-    left: 50%;
+    background: #ffffff;
+    left: 49.5%;
     min-height: 70.70312499997%;
     padding-top: 29.29687500003%;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
+    width: 800%;
+    height: 100%;
+    max-width: 4096px;
 }
 .row1_video_container iframe {
     z-index: 0;
@@ -278,8 +280,12 @@
 
 /* condition for screen size minimum of 800px */
 @media (max-width:895px) {
-
     /* your conditional / responsive CSS inside this condition */
+
+    .row1_video_inner {
+        left: 60%;
+    }
+
     .nested_row2 {
         grid-template-rows: 2fr .5fr;
         min-height: 0em;
@@ -304,7 +310,7 @@
     }
 
     .right_row_text {
-        margin-top: 11%;
+        margin-top: 6%;
         margin-bottom: 0%;
         margin-left: 10%; 
         margin-right: 10%;
