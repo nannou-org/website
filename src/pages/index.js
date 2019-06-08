@@ -80,20 +80,29 @@ const IndexPage = ({data}, props) => {
               <div className={styles.grid_container_top}>
                   <SEO title="Home" keywords={["Nannou", "About", "Education", "Presentations", "Performances", "Installations"]}/>
 
-                  <BackgroundImage 
-                      fluid={data.banner_image.childImageSharp.fluid}
-                      className={styles.nested_row1}>
+                  <div className={styles.row1_video_container}>
+                    <div className={styles.row1_video_inner}>
+                      <iframe src="https://player.vimeo.com/video/341078212?autoplay=1&loop=1&autopause=0?muted=1&background=1" width="640" height="188" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+                      </iframe>
+                    </div>
+
+                    <div className={styles.nested_row1}>
                       <div className={styles.header}>
                           <Header />
                               {props.children}
                       </div>
+
+                      <div></div>
+
                       <div className={styles.nannou_logo}>
                         <Img fixed={data.logo_image.childImageSharp.fixed} alt="nannou_logo" />
                       </div>
                       <div className={styles.banner_description}>
                           <h1>An open-source creative-coding framework for Rust</h1>
                       </div>
-                  </BackgroundImage>
+                    </div>
+
+                  </div>
 
                   <div className={styles.nested_row2}>
                       <div className={styles.icons}> 
