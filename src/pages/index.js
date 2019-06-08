@@ -130,17 +130,23 @@ const IndexPage = ({data}, props) => {
                       <h2>Batteries Included</h2>
                       <p>One of the beauties of being a creative coder is that we have the potential to create works in a wide range of domains. Nannou aims to give equal priority to a full suite of creative I/O including graphics, multi-windowing, audio, lasers, lighting and more.</p>
                   </div>
-                  <div className={styles.row3_video}> 
-                    <video loop="true" autoplay="autoplay" muted poster={data.poster1.childImageSharp.fluid}>
-                      <source src={video1} type="video/mp4" />
-                    </video>
+                  <div className={styles.row3_video}>
+                    <div className={styles.row3_video_container}>
+                      <div className={styles.row3_video_inner}>
+                        <iframe src="https://player.vimeo.com/video/341087852?autoplay=1&loop=1&autopause=0?muted=1&background=1" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+                        </iframe>
+                      </div>
+                    </div>
                   </div>
 
 
-                  <div className={styles.row4_video}> 
-                    <video loop="true" autoplay="autoplay" muted poster={data.poster2.childImageSharp.fluid}>
-                      <source src={video2} type="video/mp4" />
-                    </video>
+                  <div className={styles.row4_video}>
+                    <div className={styles.row4_video_container}>
+                      <div className={styles.row4_video_inner}>
+                        <iframe src="https://player.vimeo.com/video/341078895?autoplay=1&loop=1&autopause=0?muted=1&background=1" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+                        </iframe>
+                      </div>
+                    </div>
                   </div>
 
                   <div className={styles.right_row_text}>
@@ -153,10 +159,13 @@ const IndexPage = ({data}, props) => {
                       <p>Access to these technologies is often expensive and locked behind proprietary systems. We believe in democratising this space by open sourcing Nannou for everyone to use.</p>
                   </div>
 
-                  <div className={styles.row5_video}> 
-                    <video loop="true" autoplay="autoplay" muted poster={data.poster3.childImageSharp.fluid}>
-                      <source src={video3} type="video/mp4" />
-                    </video>
+                  <div className={styles.row5_video}>
+                    <div className={styles.row5_video_container}>
+                      <div className={styles.row5_video_inner}>
+                        <iframe src="https://player.vimeo.com/video/341087591?autoplay=1&loop=1&autopause=0?muted=1&background=1" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+                        </iframe>
+                      </div>
+                    </div>
                   </div> 
               </div>
               <Footer />
