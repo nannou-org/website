@@ -22,12 +22,14 @@
     .header {
         justify-self: end;
         align-self: start;
+        z-index: 1;
     }
     
     .nannou_logo {
         justify-self: end;
         align-self: end;
         object-fit: absolute;
+        z-index: 1;
     }
     
     .banner_description {
@@ -35,9 +37,38 @@
         align-self: start;
         max-width: 80%;
         text-align: end;
+        z-index: 1;
     }
 }
 
+.row1_video_container {
+    background: #eee;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+}
+.row1_video_inner {
+    background: #ffcccc;
+    left: 50%;
+    min-height: 70.70312499997%;
+    padding-top: 29.29687500003%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.row1_video_container iframe {
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    position:absolute;
+}
 
 .nested_row2 {
     display: grid;
