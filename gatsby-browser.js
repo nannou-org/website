@@ -7,6 +7,9 @@
 // You can delete this file if you're not using it
 require("typeface-inter")
 
+// gatsby-browser.js
+require("./src/templates/prism-nannou.css")
+
 export const onClientEntry = () => {  
     // IntersectionObserver polyfill for gatsby-background-image (Safari, IE)
     if (typeof window.IntersectionObserver === `undefined`) {
