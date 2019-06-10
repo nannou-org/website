@@ -1,7 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
-import BackgroundImage from 'gatsby-background-image'
 
 import Header from "../components/header"
 import Footer from "../components/footer"
@@ -9,10 +8,6 @@ import SEO from "../components/seo"
 import styles from './home.module.scss'
 
 import vulkan_icon from '../images/icons/vulkan_symbol.jpg' // Tell Webpack this JS file uses this image
-
-import video1 from '../videos/190422.mp4'
-import video2 from '../videos/190221.mp4'
-import video3 from '../videos/190412.mp4'
 
 export const iconImage = graphql`
   fragment iconImage on File {
@@ -82,7 +77,7 @@ const IndexPage = ({data}, props) => {
 
                   <div className={styles.row1_video_container}>
                     <div className={styles.row1_video_inner}>
-                      <iframe src="https://player.vimeo.com/video/341078212?autoplay=1&loop=1&autopause=0?muted=1&background=1" width="640" height="188" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+                      <iframe title="Nannou Banner Video" src="https://player.vimeo.com/video/341078212?autoplay=1&loop=1&autopause=0?muted=1&background=1" width="640" height="188" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
                       </iframe>
                     </div>
 
@@ -142,7 +137,7 @@ const IndexPage = ({data}, props) => {
                   <div className={styles.row3_video}>
                     <div className={styles.row3_video_container}>
                       <div className={styles.row3_video_inner}>
-                        <iframe src="https://player.vimeo.com/video/341087852?autoplay=1&loop=1&autopause=0?muted=1&background=1" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+                        <iframe title="MacTuiTui Nannou Sketch 1" src="https://player.vimeo.com/video/341087852?autoplay=1&loop=1&autopause=0?muted=1&background=1" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
                         </iframe>
                       </div>
                     </div>
@@ -152,7 +147,7 @@ const IndexPage = ({data}, props) => {
                   <div className={styles.row4_video}>
                     <div className={styles.row4_video_container}>
                       <div className={styles.row4_video_inner}>
-                        <iframe src="https://player.vimeo.com/video/341078895?autoplay=1&loop=1&autopause=0?muted=1&background=1" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+                        <iframe title="MacTuiTui Nannou Sketch 2" src="https://player.vimeo.com/video/341078895?autoplay=1&loop=1&autopause=0?muted=1&background=1" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
                         </iframe>
                       </div>
                     </div>
@@ -171,7 +166,7 @@ const IndexPage = ({data}, props) => {
                   <div className={styles.row5_video}>
                     <div className={styles.row5_video_container}>
                       <div className={styles.row5_video_inner}>
-                        <iframe src="https://player.vimeo.com/video/341087591?autoplay=1&loop=1&autopause=0?muted=1&background=1" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+                        <iframe title="MacTuiTui Nannou Sketch 3" src="https://player.vimeo.com/video/341087591?autoplay=1&loop=1&autopause=0?muted=1&background=1" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
                         </iframe>
                       </div>
                     </div>
@@ -180,7 +175,7 @@ const IndexPage = ({data}, props) => {
                   <div className={styles.row6_video}>
                     <div className={styles.row6_video_container}>
                       <div className={styles.row6_video_inner}>
-                        <iframe src="https://player.vimeo.com/video/341102804?autoplay=1&loop=1&autopause=0?muted=1&background=1" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+                        <iframe title="MacTuiTui Nannou Sketch 4" src="https://player.vimeo.com/video/341102804?autoplay=1&loop=1&autopause=0?muted=1&background=1" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
                         </iframe>
                       </div>
                     </div>
