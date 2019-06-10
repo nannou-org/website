@@ -26,7 +26,7 @@ land and share the progress with the wider world!
 
 <br>
 
-<iframe src="https://player.vimeo.com/video/340933400?autoplay=1&loop=1&autopause=0?muted=1&background=1" width="640" height="270" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe title="Daily Sketch 821 by MacTuiTui using Nannou" src="https://player.vimeo.com/video/340933400?autoplay=1&loop=1&autopause=0?muted=1&background=1" width="640" height="270" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 <i>Daily Sketch #821 by <a href="https://www.instagram.com/mactuitui/">Mactuitui</a> using nannou.</i>
 
@@ -68,7 +68,7 @@ with all the juicy details, including how we automated the installation process
 for macOS, some of the trade-offs involved in leaving OpenGL, our experience
 working with vulkano, future plans for graphics in nannou and more.
 
-<iframe src="https://player.vimeo.com/video/340928061?autoplay=1&loop=1&autopause=0?muted=1&background=1" width="640" height="270" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe title="Nannou + Vulkan in action. A Magic Mirror Installation for Museums Victoria by MindBuffer" src="https://player.vimeo.com/video/340928061?autoplay=1&loop=1&autopause=0?muted=1&background=1" width="640" height="270" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 *Nannou + Vulkan in action. A Magic Mirror Installation for Museums Victoria by
 [MindBuffer](https://mindbuffer.net).*
@@ -165,7 +165,7 @@ artists often need access to multiple windows for projection mapping or large
 displays, *n*-channel spatial audio for exhibitions, networked DMX for
 controlling lighting fixtures and much more.
 
-<iframe src="https://player.vimeo.com/video/340422829?autoplay=1&loop=1&autopause=0?muted=1&background=1" width="640" height="180" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe title="Lattice by MindBuffer, developed using nannou" src="https://player.vimeo.com/video/340422829?autoplay=1&loop=1&autopause=0?muted=1&background=1" width="640" height="180" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 *LATTICE by [MindBuffer](https://www.mindbuffer.net/), developed using nannou.*
 
