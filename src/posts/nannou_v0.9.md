@@ -110,6 +110,7 @@ fn view(app: &App, model: &Model, frame: Frame) -> Frame {
     let draw = app.draw();
     draw.background().color(LIGHT_PURPLE);
     draw.ellipse().color(DARK_BLUE);
+    draw.to_frame(app, &frame).unwrap();
     frame
 }
 ```
