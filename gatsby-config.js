@@ -41,8 +41,8 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-              name: "GatsbyJS",
-              short_name: "GatsbyJS",
+              name: "Nannou",
+              short_name: "Nannou",
               start_url: "/",
               background_color: "#f4f4f4",
               theme_color: "#2b2b2b",
