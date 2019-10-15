@@ -25,9 +25,14 @@ const Header = () => {
                         <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/posts">POSTS</Link>
                     </li>
                     <li>
-                        <a className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} href="https://opencollective.com/nannou" aria-label="Donate" target="_blank" rel="noopener noreferrer"> 
+                        <a className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} href="https://opencollective.com/nannou" aria-label="Donate" target="_blank" rel="noopener noreferrer">
                             DONATE
                         </a>
+                    </li>
+                    <li>
+                          <a className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} href="https://github.com/nannou-org/nannou" aria-label="Github" target="_blank" rel="noopener noreferrer" >
+                            CODE
+                          </a>
                     </li>
                 </ul>
             </nav>
