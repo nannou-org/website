@@ -1,7 +1,7 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
-import PropTypes from 'prop-types'
+import React from "react"
+import Helmet from "react-helmet"
+import { StaticQuery, graphql } from "gatsby"
+import PropTypes from "prop-types"
 
 function SEO({ author, description, lang, image, meta, keywords, title }) {
   return (
@@ -59,7 +59,7 @@ function SEO({ author, description, lang, image, meta, keywords, title }) {
                 name: `twitter:creator`,
                 content: `@${data.site.siteMetadata.social.twitter}`.replace(
                   /^@+/,
-                  '@'
+                  "@"
                 ),
               },
               {
@@ -83,35 +83,33 @@ function SEO({ author, description, lang, image, meta, keywords, title }) {
                 metaImage && metaImage.indexOf("https") > -1
                   ? [
                       {
-                        property: 'twitter:image:secure_url',
+                        property: "twitter:image:secure_url",
                         content: metaImage,
                       },
-                      { property: 'og:image:secure_url', 
-                        content: metaImage 
-                      },
-                      { 
-                        property: 'og:image:alt', 
-                        content: image.alt 
-                      }, 
-                      { 
-                        property: 'twitter:image:alt', 
-                        content: image.alt 
+                      { property: "og:image:secure_url", content: metaImage },
+                      {
+                        property: "og:image:alt",
+                        content: image.alt,
                       },
                       {
-                        property: 'og:image',
+                        property: "twitter:image:alt",
+                        content: image.alt,
+                      },
+                      {
+                        property: "og:image",
                         content: metaImage,
                       },
                       {
-                        property: 'og:image:width',
+                        property: "og:image:width",
                         content: image.width,
                       },
                       {
-                        property: 'og:image:height',
+                        property: "og:image:height",
                         content: image.height,
                       },
                       {
-                        property: 'twitter:card',
-                        content: 'summary_large_image',
+                        property: "twitter:card",
+                        content: "summary_large_image",
                       },
                     ]
                   : [
