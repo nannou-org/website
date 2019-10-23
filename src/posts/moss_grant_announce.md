@@ -65,7 +65,16 @@ team.
 
 ![Nannou Amethyst](nannou_amethyst_smaller.png)
 
-<br>
+### Supporting Nannou
+
+While this contribution marks a significant milestone in Nannou's quest for
+sustainability, we still have a long way to go. If you are interested in
+supporting Nannou's development, please consider becoming a contributor at [our
+open collective page](https://opencollective.com/nannou).
+
+If you would like to get to know our community a little better or simply hang
+out with some like-minded creative coders, feel free to [join us on
+slack](https://communityinviter.com/apps/nannou/nannou-slack)!
 
 ### RustFest Reminder
 
