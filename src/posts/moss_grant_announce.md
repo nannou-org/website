@@ -1,7 +1,7 @@
 ---
 title:  "Nannou awarded Mozilla grant for foundational audio development"
 date:  "22-10-2019"
-featured: "../images/nannou_logo_alpha.png"
+featured: "../images/mission_partners_nannou_mozilla.png"
 tags: [
     "Nannou",
     "Rust",
@@ -17,7 +17,7 @@ tags: [
 make it easy for artists to express themselves with simple, fast, reliable
 code.*
 
-![MOSS Mission Partners Logo](mission_partners.png)
+![MOSS Mission Partners Logo](mission_partners_nannou_mozilla.png)
 
 It is our great pleasure to announce that **Nannou has been awarded 10K USD in
 funding as a part of the [MOSS Mission
@@ -44,9 +44,14 @@ addressed, we will begin to tackle the audio graph work. At this point, we will
 post an update with our plans and solicit feedback from the various branches of
 the rust audio community before moving ahead.
 
-<br>
+[![RustAudio](rustaudio_logo.png)](https://github.com/RustAudio)
 
 ### Acknowledgements
+
+Thank you Mozilla and the MOSS team for giving us this opportunity and including
+us as a Mission Partner! We look forward to diving into the work and doing our
+best to become a positive example of what funding OSS development can achieve
+for the wider community.
 
 Thank you Erlend and the [Amethyst](https://amethyst.rs/) team for reaching out
 and encouraging us to apply! Without your encouragement, demonstration of prior
@@ -58,10 +63,7 @@ the time to communicate, collaborate and encourage one another is the path
 forward for OSS and we look forward to continuing to do so with the Amethyst
 team.
 
-Thank you Mozilla and the MOSS team for giving us this opportunity and including
-us as a Mission Partner! We look forward to diving into the work and doing our
-best to become a positive example of what funding OSS development can achieve
-for the wider community.
+![Nannou Amethyst](nannou_amethyst_smaller.png)
 
 <br>
 
