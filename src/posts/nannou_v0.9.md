@@ -1,6 +1,6 @@
 ---
 title:  "Nannou Update - Vulkan, LASERs and more!"
-date:  "09-06-2019"
+date:  "2019-06-09"
 featured: "../images/nannou_update_featured.jpg"
 tags: [
     "Nannou",

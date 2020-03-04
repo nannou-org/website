@@ -1,6 +1,6 @@
 ---
 title:  "Nannou awarded Mozilla grant for foundational audio development"
-date:  "22-10-2019"
+date:  "2019-10-22"
 featured: "../images/mission_partners_nannou_mozilla.png"
 tags: [
     "Nannou",

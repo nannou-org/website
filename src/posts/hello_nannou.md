@@ -1,6 +1,6 @@
 ---
 title:  "Hello Nannou!"
-date:  "13-06-2018"
+date:  "2018-06-13"
 featured: "../images/nannou_logo_alpha.png"
 tags: [
     "Nannou",

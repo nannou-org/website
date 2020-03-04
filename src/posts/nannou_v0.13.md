@@ -1,6 +1,6 @@
 ---
 title:  "Nannou Update - WebGPU, capturing frames and more!"
-date:  "03-03-2020"
+date:  "2020-03-03"
 featured: "../images/nannou_update_featured.jpg"
 tags: [
     "Nannou",
