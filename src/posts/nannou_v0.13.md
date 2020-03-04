@@ -1,7 +1,7 @@
 ---
 title:  "Nannou Update - WebGPU, capturing frames and more!"
 date:  "2020-03-03"
-featured: "../images/nannou_update_featured.jpg"
+featured: "../images/Nannou-13-banner.jpg"
 tags: [
     "Nannou",
     "Rust",
@@ -21,14 +21,11 @@ version **0.13**.
 This version is particularly special for our community as it opens the
 floodgates for a lot of pending graphics work and paves the road ahead for
 running nannou on the web!
-
 <br>
 
-<<< MACTUITUI BANNER SKETCH >>>
+<iframe src="https://player.vimeo.com/video/395473029?autoplay=1&loop=1&autopause=0?muted=1&background=1" width="640" height="268" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-<i>Daily Sketch #??? by <a href="https://www.instagram.com/mactuitui/">Mactuitui</a> using nannou.</i>
-
-<br>
+<i>Daily Sketch 1219 by <a href="https://www.instagram.com/mactuitui/">Mactuitui</a> using nannou.</i>
 
 While the main focus was graphics, this release also lands some serious patches
 and long-desired features. We'll cover this and more.
@@ -47,7 +44,7 @@ for working with hardware accelerated graphics and compute. Despite having "Web"
 in the name, the standard lends itself incredibly well as a portable *native*
 solution for working with the GPU.
 
-<<< NANNOU + WEBGPU LOGOS>>>
+![nannou_plus_wpgu](images/nannou_plus_wgpu.png)
 
 With 0.13, nannou gains support for this new standard via **wgpu-rs** - a Rust
 implementation of the standard driven by the [gfx-rs](https://github.com/gfx-rs)
@@ -71,7 +68,7 @@ progress on the web target
 This alone greatly simplifies the build process on macOS and closes around 20%
 of nannou's open issues!
 
-<<< SCREENSHOT OF CLOSED ISSUES >>>
+![closed_mac_github_issues](images/github_mac_issues.png)
 
 ### WebGPU Community
 
@@ -96,16 +93,19 @@ to the window like this:
 ```rust
 window.capture_frame(path);
 ```
-
+</br>
 You can call this method at any time during your application, for example on a
 `key_pressed` event to take a screenshot, or during the `update` or `view` to
 capture every frame into a sequence. See the [**simple_capture.rs**
 example](https://github.com/nannou-org/nannou/blob/master/examples/simple_capture.rs)
 for a demonstration.
 
-<<< MACTUITUI SKETCH >>>
+</br>
+</br>
 
-<i>Daily Sketch #??? by <a href="https://www.instagram.com/mactuitui/">Mactuitui</a>, updated for 0.13 and captured using this approach.</i>
+<iframe src="https://player.vimeo.com/video/395467841?autoplay=1&loop=1&autopause=0?muted=1&background=1" width="640" height="640" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+<i>Daily Sketch 1220 by <a href="https://www.instagram.com/mactuitui/">Mactuitui</a>, updated for 0.13 and captured using this approach.</i>
 
 Sometimes its useful to capture your sketch at a much higher resolution than
 what your window can support, especially stills intended for print. Nannou now
@@ -140,7 +140,7 @@ mention that we had a great time at the RustFest BCN workshop! We were
 overwhelmed by the attendance, and would like to apologise to those who couldn't
 find a seat or spare power socket due to the packed room.
 
-<<< TWEET BY SOPHIE >>>
+<blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">Lasers and LEDs at the Creative Coding Workshop with <a href="https://twitter.com/nannoucc?ref_src=twsrc%5Etfw">@nannoucc</a> at <a href="https://twitter.com/hashtag/rustfest?src=hash&amp;ref_src=twsrc%5Etfw">#rustfest</a> <a href="https://t.co/NhHWUELyBX">pic.twitter.com/NhHWUELyBX</a></p>&mdash; Sophie G (@rarity2017) <a href="https://twitter.com/rarity2017/status/1193213060598697985?ref_src=twsrc%5Etfw">November 9, 2019</a></blockquote> 
 
 Thanks to Sophie for capturing this moment!
 
@@ -162,7 +162,11 @@ feel free to share it with us on twitter
 [#nannou](https://twitter.com/search?q=%23nannou&src=typed_query) hashtag also
 has lots of awesome creations from the community.
 
-<<< SKETCH? >>>
+<iframe src="https://player.vimeo.com/video/395475125?autoplay=1&loop=1&autopause=0?muted=1&background=1" width="640" height="268" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+<i>Daily Sketch 0114 by <a href="https://www.instagram.com/mactuitui/">Mactuitui</a></i>
+
+<br>
 
 If you would like to help us spend more time on nannou, consider becoming a
 contributor at [our Open Collective page](https://opencollective.com/nannou).

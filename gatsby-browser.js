@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-expressions */
 /**
  * Implement Gatsby's Browser APIs in this file.
  *
@@ -14,6 +15,6 @@ export const onClientEntry = () => {
     // IntersectionObserver polyfill for gatsby-background-image (Safari, IE)
     if (typeof window.IntersectionObserver === `undefined`) {
       import(`intersection-observer`)
-      console.log(`# IntersectionObserver is polyfilled!`)
+      //console.log(`# IntersectionObserver is polyfilled!`)
     }
 }
