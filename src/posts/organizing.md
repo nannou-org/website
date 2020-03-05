@@ -1,6 +1,6 @@
 ---
 title:  "Organizing Nannou Work"
-date:  "14-06-2019"
+date:  "2019-06-14"
 tags: [
     "Nannou",
     "Rust",

@@ -1,6 +1,6 @@
 ---
 title:  "Hello Nannou!"
-date:  "13-06-2018"
+date:  "2018-06-13"
 featured: "../images/nannou_logo_alpha.png"
 tags: [
     "Nannou",
@@ -59,7 +59,7 @@ We'll leave you with some of recent works that we have created using Nannou.
 
 - [**LATTICE**](https://www.mindbuffer.net/#/lattice/) - a 5x channel audiovisual laser installation driven by custom generative music software.
 
-  [![LATTICE](https://static1.squarespace.com/static/598bcd9f6b8f5b57cf8691fb/5990e9399f74563f0321c76a/599116bce4fcb5badd8955e3/1527498906098/19679168_10155445797492716_3441482789834233679_o.jpg?format=1000w)](https://www.mindbuffer.net/#/lattice/)
+![LATTICE](images/lattice_1.jpg)
 
 - [**ORACLE**](https://www.mindbuffer.net/#/oracle/) - an immerse installation featuring 128x moving-heads and spatial audio.
 

@@ -1,6 +1,6 @@
 ---
 title:  "Nannou Update - Vulkan, LASERs and more!"
-date:  "09-06-2019"
+date:  "2019-06-09"
 featured: "../images/nannou_update_featured.jpg"
 tags: [
     "Nannou",
@@ -50,7 +50,7 @@ wanted to do our best to get them right.
 The largest change is without a doubt the switch from OpenGL to
 [Vulkan](https://www.khronos.org/vulkan/) for handling cross-platform graphics.
 
-![nannou_plus_vulkan](nannou_plus_vulkan.png)
+![nannou_plus_vulkan](images/nannou_plus_vulkan.png)
 
 Our primary reasons for making the switch are:
 
@@ -185,7 +185,7 @@ tricky details such as draw order optimisation, inertia reduction, blanking
 delays and sharp angle delays - features that are difficult to find in existing
 free and open-source solutions.
 
-![nannou_laser_api](nannou_laser_api.png)
+![nannou_laser_api](images/nannou_laser_api.png)
 
 If you happen to have a LASER projector and a DAC supporting the Ether Dream
 protocol, you can begin playing with **nannou_laser** by checking out [these
@@ -212,7 +212,7 @@ sorts in the form of [an online guide](https://guide.nannou.cc/). The guide aims
 to be a one-stop-shop for all information, tips and tricks someone could desire
 related to nannou.
 
-[![nannou_guide_preview](nannou_guide_preview.png)](https://guide.nannou.cc)
+[![nannou_guide_preview](images/nannou_guide_preview.png)](https://guide.nannou.cc)
 
 Currently, the guide features a ["Why
 Nannou?"](https://guide.nannou.cc/why_nannou.html) chapter outlining the goals
