@@ -76,10 +76,9 @@ The WebGPU standard has a vibrant and active community surrounding it and
 wgpu-rs has already been adopted by [a number of
 projects](https://github.com/gfx-rs/wgpu-rs#friends) over the past few years.
 The developers have been incredibly supportive making the adoption process very
-easy. kvark especially has been an exceptional help, and even has a commit in
+easy. <b><a href="https://github.com/kvark">kvark</a></b> especially has been an exceptional help, and even has a commit in
 the new release. 0.13 would likely be another week or two away if it was not for
 your support, so thank you!
-
 
 ## Capturing Frames & Textures
 
