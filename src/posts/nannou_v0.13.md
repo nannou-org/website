@@ -1,6 +1,6 @@
 ---
 title:  "Nannou Update - WebGPU, capturing frames and more!"
-date:  "2020-03-03"
+date:  "2020-03-05"
 featured: "../images/Nannou-13-banner.jpg"
 tags: [
     "Nannou",
@@ -96,9 +96,7 @@ window.capture_frame(path);
 </br>
 You can call this method at any time during your application, for example on a
 `key_pressed` event to take a screenshot, or during the `update` or `view` to
-capture every frame into a sequence. See the [**simple_capture.rs**
-example](https://github.com/nannou-org/nannou/blob/master/examples/simple_capture.rs)
-for a demonstration.
+capture every frame into a sequence. See the <b><a href="https://github.com/nannou-org/nannou/blob/master/examples/simple_capture.rs">simple_capture.rs example</a></b> for a demonstration.
 
 </br>
 </br>
@@ -111,10 +109,7 @@ Sometimes its useful to capture your sketch at a much higher resolution than
 what your window can support, especially stills intended for print. Nannou now
 also supports this case by allowing users to draw to a much larger texture,
 capturing it with the new `TextureCapturer` type and simultaneously downscaling
-for preview within the window. See the [**capture_hi_res.rs**
-example](https://github.com/nannou-org/nannou/blob/master/examples/capture_hi_res.rs)
-for a demonstration of this.
-
+for preview within the window. See the <b><a href="https://github.com/nannou-org/nannou/blob/master/examples/capture_hi_res.rs">capture\_hi\_res.rs example</a></b> for a demonstration of this.
 
 ## What's Next?
 
