@@ -25,7 +25,7 @@ running nannou on the web!
 
 <iframe src="https://player.vimeo.com/video/395473029?autoplay=1&loop=1&autopause=0?muted=1&background=1" width="640" height="268" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-<i>Daily Sketch 1219 by <a href="https://www.instagram.com/mactuitui/">Mactuitui</a> using nannou.</i>
+<i>Daily Sketch 1219 by <a href="https://www.instagram.com/mactuitui/" target="_blank">Mactuitui</a> using nannou.</i>
 
 While the main focus was graphics, this release also lands some serious patches
 and long-desired features. We'll cover this and more.
@@ -76,7 +76,7 @@ The WebGPU standard has a vibrant and active community surrounding it and
 wgpu-rs has already been adopted by [a number of
 projects](https://github.com/gfx-rs/wgpu-rs#friends) over the past few years.
 The developers have been incredibly supportive making the adoption process very
-easy. <b><a href="https://github.com/kvark">kvark</a></b> especially has been an exceptional help, and even has a commit in
+easy. <b><a href="https://github.com/kvark" target="_blank">kvark</a></b> especially has been an exceptional help, and even has a commit in
 the new release. 0.13 would likely be another week or two away if it was not for
 your support, so thank you!
 
@@ -95,20 +95,20 @@ window.capture_frame(path);
 </br>
 You can call this method at any time during your application, for example on a
 `key_pressed` event to take a screenshot, or during the `update` or `view` to
-capture every frame into a sequence. See the <b><a href="https://github.com/nannou-org/nannou/blob/master/examples/simple_capture.rs">simple_capture.rs example</a></b> for a demonstration.
+capture every frame into a sequence. See the <b><a href="https://github.com/nannou-org/nannou/blob/master/examples/simple_capture.rs" target="_blank">simple_capture.rs example</a></b> for a demonstration.
 
 </br>
 </br>
 
 <iframe src="https://player.vimeo.com/video/395467841?autoplay=1&loop=1&autopause=0?muted=1&background=1" width="640" height="640" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-<i>Daily Sketch 1220 by <a href="https://www.instagram.com/mactuitui/">Mactuitui</a>, updated for 0.13 and captured using this approach.</i>
+<i>Daily Sketch 1220 by <a href="https://www.instagram.com/mactuitui/" target="_blank">Mactuitui</a>, updated for 0.13 and captured using this approach.</i>
 
 Sometimes its useful to capture your sketch at a much higher resolution than
 what your window can support, especially stills intended for print. Nannou now
 also supports this case by allowing users to draw to a much larger texture,
 capturing it with the new `TextureCapturer` type and simultaneously downscaling
-for preview within the window. See the <b><a href="https://github.com/nannou-org/nannou/blob/master/examples/capture_hi_res.rs">capture\_hi\_res.rs example</a></b> for a demonstration of this.
+for preview within the window. See the <b><a href="https://github.com/nannou-org/nannou/blob/master/examples/capture_hi_res.rs" target="_blank">capture\_hi\_res.rs example</a></b> for a demonstration of this.
 
 ## What's Next?
 
@@ -158,7 +158,7 @@ has lots of awesome creations from the community.
 
 <iframe src="https://player.vimeo.com/video/395475125?autoplay=1&loop=1&autopause=0?muted=1&background=1" width="640" height="268" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-<i>Daily Sketch 0114 by <a href="https://www.instagram.com/mactuitui/">Mactuitui</a></i>
+<i>Daily Sketch 0114 by <a href="https://www.instagram.com/mactuitui/" target="_blank">Mactuitui</a></i>
 
 <br>
 
@@ -167,6 +167,6 @@ contributor at [our Open Collective page](https://opencollective.com/nannou).
 
 <br>
 <br>
-<center>Get started with nannou <b><a href="https://guide.nannou.cc/">here</a></b>!</center>
+<center>Get started with nannou <b><a href="https://guide.nannou.cc/" target="_blank">here</a></b>!</center>
 <br>
 <br>
