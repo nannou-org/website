@@ -1,7 +1,8 @@
 ---
 title:  "Nannou Update - Vulkan, LASERs and more!"
 date:  "2019-06-09"
-featured: "../images/nannou_update_featured.jpg"
+featured: "../../images/nannou_update_featured.jpg"
+document_type: "post"
 tags: [
     "Nannou",
     "Rust",

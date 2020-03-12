@@ -1,7 +1,8 @@
 ---
 title:  "Nannou Update - WebGPU, capturing frames and more!"
 date:  "2020-03-05"
-featured: "../images/Nannou-13-banner.jpg"
+featured: "../../images/Nannou-13-banner.jpg"
+document_type: "post"
 tags: [
     "Nannou",
     "Rust",

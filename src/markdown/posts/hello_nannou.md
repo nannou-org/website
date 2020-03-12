@@ -1,7 +1,8 @@
 ---
 title:  "Hello Nannou!"
 date:  "2018-06-13"
-featured: "../images/nannou_logo_alpha.png"
+featured: "../../images/nannou_logo_alpha.png"
+document_type: "post"
 tags: [
     "Nannou",
     "Rust",
