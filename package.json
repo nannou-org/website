@@ -37,7 +37,7 @@
     "gatsby-remark-relative-images": "^0.3.0",
     "gatsby-remark-responsive-iframe": "^2.2.32",
     "gatsby-source-filesystem": "^2.1.48",
-    "gatsby-transformer-remark": "^2.6.53",
+    "gatsby-transformer-remark": "^2.6.58",
     "gatsby-transformer-sharp": "^2.3.16",
     "inter-ui": "^3.12.1",
     "intersection-observer": "^0.7.0",

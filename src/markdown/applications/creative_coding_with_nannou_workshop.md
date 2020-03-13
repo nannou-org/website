@@ -22,7 +22,9 @@ tags: [
 Creative coding is a way of looking at programming as a tool for creative expression. One of the beauties of creative coding is the potential to express ourselves in a wide variety of domains. 
 **Nannou** is a modern creative coding framework that aims to give equal priority and easy access to a full suite of creative input and output including graphics, audio, LASERs, lighting and more.
 
-![batteries_included](../../images/workshop/batteries_included.png)
+<iframe title="Daily Sketch 821 by MacTuiTui using Nannou" src="https://player.vimeo.com/video/347501036?autoplay=1&loop=1&autopause=0?muted=1&background=1" width="640" height="270" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+<i>Daily Sketch #842 by <a href="https://www.instagram.com/mactuitui/">Mactuitui</a> using nannou.</i>
 
 We would like to propose a two hour workshop where attendees get an introduction to creative coding through **nannou** along with the opportunity to use **nannou** to experiment with each of these domains in a guided, relaxed and playful setting.
 
@@ -82,12 +84,17 @@ The workshop will be hosted by Joshua Batty and Mitchell Nordine, experienced cr
 <br>
 
 ![RustFestCollage](../../images/RustFestCollage.jpg)
-<i>**nannou** Creative Coding Workshop by MindBuffer - RustFest BCN 2019</i>
+<i>nannou Creative Coding Workshop by MindBuffer - RustFest BCN 2019</i>
 
 Joshua Batty has a PhD in audiovisual relationships and has experience in teaching creative coding in an educational, university setting. Mitchell Nordine is a long-time member of the open source creative coding community, most notably founding the RustAudio organisation, the Conrod GUI library and now the Nannou Organisation.
 
-Joshua and Mitchell make their living through creative coding as <a href="https://mindbuffer.net" target="_blank">MindBuffer</a>, an award-winning audiovisual research and digital design studio, specialising in immersive interactive art installations with notable clients including Museums Victoria, RMIT University, IBM Watson and Studio Robert Henke.
-
 ![mindbuffer_plus_nannou](../../images/workshop/mindbuffer_plus_nannou.jpg)
 
+Joshua and Mitchell make their living through creative coding as <a href="https://mindbuffer.net" target="_blank">MindBuffer</a>, an award-winning audiovisual research and digital design studio, specialising in immersive interactive art installations with notable clients including Museums Victoria, RMIT University, IBM Watson and Studio Robert Henke.
+
+<iframe title="MindBuffer projects made with nannou" src="https://player.vimeo.com/video/347246357?autoplay=1&loop=1&autopause=0?muted=1&background=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+<i>MindBuffer projects made with nannou.</i>
+
 **Nannou** is the foundation of all of their recent work, both personal and commercial. The majority of their spare time is spent contributing to the framework and assisting the growing community.
+
