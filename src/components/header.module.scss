@@ -1,5 +1,10 @@
 .header {
     padding: 1rem 0 2rem;
+    z-index: 10;
+}
+
+.text {
+    align-self: center;
 }
 
 .nav-list {
@@ -25,3 +30,14 @@
     font-weight: bold;
     text-decoration: underline;
 }
+
+.menu-nav-item {
+    color: #525252;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.menu-nav-item:hover {
+    color: #666666;
+}
+

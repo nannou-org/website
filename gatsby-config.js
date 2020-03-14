@@ -3,11 +3,11 @@ module.exports = {
         title: 'Nannou · Creative Coding Framework for Rust',
         titleTemplate: '%s · Nannou',
         author: 'Nannou',
-        keywords: ['Nannou', 'Creative Coding', 'Rust', 'Audio', 'Graphics', 'Vulkan', 'Lasers'],
+        keywords: ['Nannou', 'Creative Coding', 'Rust', 'Audio', 'Graphics', 'Vulkan', 'WebGPU', 'Metal', 'DX12', 'Lasers'],
         description:
             'An open-source creative-coding framework for Rust',
         siteUrl: 'https://nannou.cc', // no trailing slash!
-        image: '/static/images/josh-profile.jpg',
+        email: 'contact@nannou.cc',
         owner: 'Nannou',
         social: {
             twitter: '',

@@ -3,7 +3,9 @@ import Img from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
 import styles from "./footer.module.scss"
 
-const Footer = ({ data }) => {
+//------------------------------------------------- THIS FOOTER IS FOR THE HOME PAGE GIVING CREDIT TO MACTUITUI
+
+const FooterHomePage = ({ data }) => {
   const site_data = useStaticQuery(graphql`
     query {
       logo_image: file(relativePath: { eq: "images/nannou_logo_alpha.png" }) {
@@ -62,10 +64,21 @@ const Footer = ({ data }) => {
       <div className={styles.copyright}>
         <p>
           Copyright © {site_data.site.siteMetadata.author} 2020
+          <br />
+          Sketches by{" "}
+          <a
+            href="https://www.instagram.com/mactuitui/"
+            aria-label="Guide"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            MacTuiTui
+          </a>
         </p>
       </div>
     </footer>
   )
 }
 
-export default Footer
+export default FooterHomePage
