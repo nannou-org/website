@@ -26,6 +26,9 @@ module.exports.createPages = async ({ graphql, actions }) => {
             allMarkdownRemark {
                 edges {
                     node {
+                        frontmatter {
+                            document_type
+                        }
                         fields {
                             slug
                         }
@@ -37,12 +40,26 @@ module.exports.createPages = async ({ graphql, actions }) => {
     
     //3. create new pages
     res.data.allMarkdownRemark.edges.forEach((edge) => {
-        createPage({
+        {edge.node.frontmatter.document_type == 'post' ? createPage({
             component: postsTemplate,
             path: `/posts/${edge.node.fields.slug}`,
             context: {
                 slug: edge.node.fields.slug
             }
-        })
+        }) : 
+        createPage({
+            component: postsTemplate,
+            path: `${edge.node.fields.slug}`,
+            context: {
+                slug: edge.node.fields.slug
+            }
+        })} 
+        // createPage({
+        //     component: postsTemplate,
+        //     path: `'posts/'${edge.node.fields.slug}`,
+        //     context: {
+        //         slug: edge.node.fields.slug
+        //     }
+        // })
     })
 }

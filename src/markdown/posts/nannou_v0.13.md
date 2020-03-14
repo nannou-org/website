@@ -45,7 +45,7 @@ for working with hardware accelerated graphics and compute. Despite having "Web"
 in the name, the standard lends itself incredibly well as a portable *native*
 solution for working with the GPU.
 
-![nannou_plus_wpgu](images/nannou_plus_wgpu.png)
+![nannou_plus_wpgu](../images/nannou_plus_wgpu.png)
 
 With 0.13, nannou gains support for this new standard via **wgpu-rs** - a Rust
 implementation of the standard driven by the [gfx-rs](https://github.com/gfx-rs)
@@ -69,7 +69,7 @@ progress on the web target
 This alone greatly simplifies the build process on macOS and closes around 20%
 of nannou's open issues!
 
-![closed_mac_github_issues](images/github_mac_issues.png)
+![closed_mac_github_issues](../images/github_mac_issues.png)
 
 ### WebGPU Community
 
