@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import Header from "../components/header"
-import Footer from "../components/footer"
+import FooterHomePage from "../components/footer_home_page"
 import SEO from "../components/seo"
 import styles from "./home.module.scss"
 
@@ -276,7 +276,7 @@ const IndexPage = ({ data }, props) => {
           </p>
         </div>
       </div>
-      <Footer />
+      <FooterHomePage />
     </div>
   )
 }

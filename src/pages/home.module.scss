@@ -29,15 +29,15 @@
         justify-self: end;
         align-self: end;
         object-fit: absolute;
-        z-index: 1;
+        z-index: 0;
     }
     
     .banner_description {
         justify-self: end;
         align-self: start;
-        max-width: 80%;
+        max-width: 75%;
         text-align: end;
-        z-index: 1;
+        z-index: 0;
     }
 }
 
@@ -277,6 +277,7 @@
     display: grid;
     grid-column: 1/3;
 }
+
 
 /* condition for screen size minimum of 800px */
 @media (max-width:895px) {
