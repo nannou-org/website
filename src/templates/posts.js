@@ -22,6 +22,7 @@ export const query = graphql`
         }
         title
         date
+        document_type
         tags
       }
       html
@@ -45,8 +46,12 @@ const Posts = ({ data }) => {
         image={image}
       />
       <div className={styles.post}>
-        <h1>{frontmatter.title}</h1>
-        <p>{frontmatter.date}</p>
+        {frontmatter.document_type === "post" &&
+          <div>
+            <h1>{frontmatter.title}</h1>
+            <p>{frontmatter.date}</p>
+          </div>
+        }
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>
     </Layout>

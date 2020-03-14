@@ -1,6 +1,7 @@
 ---
 title:  "Organizing Nannou Work"
 date:  "2019-06-14"
+document_type: "post"
 tags: [
     "Nannou",
     "Rust",
@@ -29,7 +30,7 @@ feature requests or unimplemented sections of code.
 Don't feel any obligation to use these projects, I know kanban isn't everyone's cup of tea.
 Having said that if you do happen to make / find an issue that you think fits one of these projects
 adding it to the project might help someone get to it quicker.
-![how to add to project](add_to_project.png)
+![how to add to project](../images/add_to_project.png)
 
 ## Stackoverflow
 Asking coding questions about nannou in our [slack](https://communityinviter.com/apps/nannou/nannou-slack) is a great way to get quick answers 

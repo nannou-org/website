@@ -1,7 +1,8 @@
 ---
 title:  "Hello Nannou!"
 date:  "2018-06-13"
-featured: "../images/nannou_logo_alpha.png"
+featured: "../../images/nannou_logo_alpha.png"
+document_type: "post"
 tags: [
     "Nannou",
     "Rust",
@@ -18,8 +19,8 @@ Nannou is an open source creative coding framework built in Rust for artists, ha
 
 If you would prefer to jump straight in you can [get started here](https://github.com/nannou-org/nannou#getting-started)!
 
-![nannou demos](https://i.imgur.com/m7Cba72.png)
-*Simple Harmonic Motion GUI, [LATTICE](https://www.mindbuffer.net/#/lattice/) laser installation, [Spatial Audio Server](https://github.com/museumsvictoria/spatial_audio_server).*
+![nannou demos](../images/nannou_demos.jpeg)
+*Simple Harmonic Motion GUI, [LATTICE](https://www.mindbuffer.net/lattice/) laser installation, [Spatial Audio Server](https://github.com/museumsvictoria/spatial_audio_server).*
 
 Whether working on a 12-month laser installation or a 5 minute sketch, Nannou aims to give artists easy access to the tools they need.
 
@@ -57,16 +58,16 @@ If you are interested in hosting a Nannou workshop or presentation please get in
 
 We'll leave you with some of recent works that we have created using Nannou.
 
-- [**LATTICE**](https://www.mindbuffer.net/#/lattice/) - a 5x channel audiovisual laser installation driven by custom generative music software.
+- [**LATTICE**](https://www.mindbuffer.net/lattice/) - a 5x channel audiovisual laser installation driven by custom generative music software.
 
-![LATTICE](images/lattice_1.jpg)
+![LATTICE](../images/lattice_1.jpg)
 
-- [**ORACLE**](https://www.mindbuffer.net/#/oracle/) - an immerse installation featuring 128x moving-heads and spatial audio.
+- [**ORACLE**](https://www.mindbuffer.net/oracle/) - an immerse installation featuring 128x moving-heads and spatial audio.
 
-  [![ORACLE](https://i.imgur.com/lbPKPDl.png)](https://www.mindbuffer.net/#/oracle/)
+  [![ORACLE](../images/oracle.jpeg)](https://www.mindbuffer.net/oracle/)
 
 - [**Spatial Audio Server**](https://github.com/museumsvictoria/spatial_audio_server) - a cross-platform, n-channel spatial audio server developed for Scienceworks & Museums Victoria.
 
-  [![Spatial Audio Server](https://camo.githubusercontent.com/49c023f616f3aa81b381d6cd24582c17e79309b2/68747470733a2f2f696d6775722e636f6d2f3271584a746a632e706e67)](https://github.com/museumsvictoria/spatial_audio_server)
+  [![Spatial Audio Server](../images/spatial_audio_server.png)](https://github.com/museumsvictoria/spatial_audio_server)
 
 *With love and lazers from Mitch, Josh, Keenan & Tom | The Nannou Organisation <3*
