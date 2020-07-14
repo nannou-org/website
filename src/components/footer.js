@@ -34,6 +34,15 @@ const Footer = ({ data }) => {
         </a>
 
         <a
+          href="https://matrix.to/#/+nannou:matrix.org"
+          aria-label="Matrix"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Matrix
+        </a>
+
+        <a
           href="https://communityinviter.com/apps/nannou/nannou-slack"
           aria-label="Slack"
           target="_blank"

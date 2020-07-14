@@ -271,6 +271,9 @@ const IndexPage = ({ data }, props) => {
             coders you are welcome to join us at{" "}
             <a href="https://communityinviter.com/apps/nannou/nannou-slack">
               the nannou slack
+            </a> or{" "}
+            <a href="https://matrix.to/#/+nannou:matrix.org">
+              the nannou matrix community
             </a>
             .
           </p>
