@@ -31,16 +31,16 @@ the unexpected hurdles, the pleasant surprises, and a hint of what we wish to
 focus on next.
 
 
-### Addressing long-standing issues in [CPAL](https://github.com/rustaudio/cpal)
+### Addressing long-standing issues in CPAL
 
 One of **nannou**'s core design tenets is to prefer pure-Rust solutions over
 bindings to other languages where possible. This often means assisting in
 driving forward progress upstream and being part of the change we want to see.
 
-CPAL, the Cross Platform Audio Library, is a major collaborative effort by the
-Rust audio community to develop a low-level, portable API around the popular
-audio I/O hosts available on major platforms. A large part of our work involved
-addressing some of CPAL's long-standing issues.
+[CPAL](https://github.com/rustaudio/cpal), the Cross Platform Audio Library, is
+a major collaborative effort by the Rust audio community to develop a low-level,
+portable API around the popular audio I/O hosts available on major platforms. A
+large part of our work involved addressing some of CPAL's long-standing issues.
 
 [![RustAudio](../images/rustaudio_logo.png)](https://github.com/RustAudio)
 
@@ -71,7 +71,7 @@ static sample format selection ([via a
 type](https://docs.rs/cpal/0.12.0/cpal/traits/trait.DeviceTrait.html#method.build_output_stream))
 or dynamically handling the sample format chosen by the host (see the [raw
 stream builder alternative
-method](https://docs.rs/cpal/0.12.0/cpal/traits/trait.DeviceTrait.html#tymethod.build_output_stream_raw).
+method](https://docs.rs/cpal/0.12.0/cpal/traits/trait.DeviceTrait.html#tymethod.build_output_stream_raw)).
 A big thanks to Ralith for their critical feedback and follow-up PR that
 resulted in a much nicer overall outcome.
 
@@ -85,8 +85,8 @@ research into existing solutions and drafting up a proposal
 ([#363](https://github.com/RustAudio/cpal/issues/363)), we landed a new
 `StreamInstant` API ([#397](https://github.com/RustAudio/cpal/pull/397)). The
 work aims to address this gap by providing system timestamps for the moment
-audio is captured (via an input device), delivered to the user (via callback)
-and played back (via an output device) with a friendly API modelled after the
+audio is captured via an input device, delivered to the user via callback, and
+played back via an output device with a friendly API modelled after the
 `std::time::Instant` type.
 
 **Requesting Buffer Sizes**
@@ -104,14 +104,16 @@ host to fallback to some default. A big thanks to sniperrifle2004 who closely
 reviewed the ALSA host implementation, caught some mistakes and pointed out some
 vital quirks in the ALSA API that needed addressing.
 
-Amidst these more major changes there were of course other minor unplanned
-tweaks and patches that made sense to address in between. These included
-switching from `failure` to the lighter and more library-friendly `thiserror`
-crate ([#340](https://github.com/RustAudio/cpal/pull/340)), renaming types to
-better suit audio library conventions
+Amidst these changes there were of course other minor unplanned tweaks and
+patches that made sense to address in between. These included switching from
+`failure` to the lighter and more library-friendly `thiserror` crate
+([#340](https://github.com/RustAudio/cpal/pull/340)), renaming types to better
+suit audio library conventions
 ([#371](https://github.com/RustAudio/cpal/pull/371)) and [many
 others](https://github.com/RustAudio/cpal/pulls?q=is%3Apr+is%3Aclosed+author%3Amitchmindtree).
 
+
+![WASM](../images/webassembly_logo.png)
 
 ### CPAL + WASM
 
@@ -137,16 +139,16 @@ in the browser right now!
 
 [**cpal-wasm-demo.nannou.cc**](https://cpal-wasm-demo.nannou.cc)
 
-*NOTE: There's a tiny WAV embedded in the WASM, so it might take a couple
+**NOTE:** There's a tiny WAV embedded in the WASM, so it might take a couple of
 seconds to download the audio on the first "Play". The demo seems to work nicely
-on desktop Firefox and Chrome but no luck on Safari or Edge just yet, we're yet
-to investigate.*
+on desktop Firefox and Chrome but no luck on Safari or Edge just yet, we are yet
+to investigate.
 
 Here is a [link to the repo](https://github.com/nannou-org/cpal_wasm_example)
 for this demo in case you would like to take a look.
 
 
-### `sample` becomes DASP - Digital Audio Signal Processing
+### "sample" becomes DASP - Digital Audio Signal Processing
 
 When working with low-level audio in code, there is a common set of patterns and
 abstractions that the vast majority of audio libraries and applications apply.
@@ -159,10 +161,10 @@ The `sample` crate aimed to provide these fundamentals for working with PCM
 provided a suite of low-level, high-performance tools including types, traits
 and functions for working with digital audio signals.
 
-The name `sample` is a remnant of the crate's original goal at inception - to
-provide a simple `Sample` trait abstraction along with a well-tested suite of
-conversions between the most commonly encountered sample format types. Since
-then, the crate gained a few more contributors and grew to cover more of the
+The name `sample` is a remnant of the crate's original goal at inception which
+was to provide a simple `Sample` trait abstraction along with a well-tested
+suite of conversions between the most commonly encountered sample format types.
+Since then the crate gained more contributors and grew to cover more of the
 aforementioned fundamentals with a collection of abstractions designed to
 interoperate in a nice manner. In turn, the original name began to make less
 sense.
@@ -174,16 +176,17 @@ refactor](https://github.com/RustAudio/dasp/pull/120), the crate has been split
 into a collection of feature-gated sub-crates, greatly improving modularity and
 allowing users to precisely select the tools and abstractions that they need.
 You can find a simple overview of the available crates
-[here](https://github.com/RustAudio/dasp#crates)
+[here](https://github.com/RustAudio/dasp#crates).
 
-**`dasp_graph`**
+**dasp_graph**
 
-`dasp_graph` is a new addition to the `dasp` crate collection for dynamically
-creating and editing audio graphs. The crate is targeted towards users who
-require an efficient yet flexible and dynamically configurable audio graph. Use
-cases might include virtual mixers, digital audio workstations, game audio
-systems, virtual modular synthesizers and related applications where the ability
-to add and remove nodes and re-route audio at runtime is a must.
+[`dasp_graph`](https://docs.rs/dasp_graph) is a new addition to the `dasp` crate
+collection for dynamically creating and editing audio graphs. The crate is
+targeted towards users who require an efficient yet flexible and dynamically
+configurable audio graph. Use cases include virtual mixers, digital audio
+workstations, game audio systems, virtual modular synthesizers and related
+applications where the ability to add and remove nodes and re-route audio at
+runtime is a must.
 
 This work has been a long-time coming and is the result of many discussions in
 the rust audio community and lessons learned over the last few years of working
@@ -192,7 +195,7 @@ usage at [the PR](https://github.com/RustAudio/dasp/pull/130) and
 [docs.rs](https://docs.rs/dasp_graph/0.11.0/dasp_graph/).
 
 
-### Future Work
+## Future Work
 
 While we are happy with the work achieved over the past few months, there is of
 course much more to be done! Some next steps that come to mind for CPAL include:
@@ -226,7 +229,7 @@ running nannou sketches and applications on the web! [Stay
 tuned](https://github.com/nannou-org/nannou/issues/7).
 
 
-### Acknowledgements
+## Acknowledgements
 
 Our work is but a small fraction in the grand scheme of Rust audio development -
 there are many others doing great and important work! Consider joining the
@@ -244,7 +247,7 @@ which projects will succeed and reach such a foundational status, many would
 never get the chance without generous opportunities like this. Thank you!
 
 
-### Supporting Nannou
+## Supporting Nannou
 
 While this contribution marks a significant milestone in Nannou's quest for
 sustainability, we still have a long way to go. If you are interested in
