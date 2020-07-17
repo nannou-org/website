@@ -1,5 +1,5 @@
 ---
-title:  "Mozilla Audio Development Grant - Reaching the final milestone"
+title:  "MOSS Audio Development Grant - Reaching the Final Milestone"
 date:  "2020-07-15"
 featured: "../../images/mission_partners_nannou_mozilla.png"
 document_type: "post"
@@ -132,11 +132,18 @@ as a simple way to target both native platforms and the modern web in pure Rust!
 To accompany the example, we have added a [step-by-step
 tutorial](https://github.com/RustAudio/cpal/wiki/Setting-up-a-new-CPAL-WASM-project)
 to CPAL's wiki describing how to setup your CPAL project to target the web. To
-demonstrate, we've created a (very basic) web page where you can test out CPAL
-in the browser right now! TODO: Add example. Here is a link to the repo for this
-example in case you would like to take a look. TODO: Add link. *We've only had
-the chance to test this in desktop Firefox and Chrome - please let us know if
-you run into any issues or strange behaviour!*
+demonstrate, we've created a (veeery basic) web page where you can test out CPAL
+in the browser right now!
+
+[**cpal-wasm-demo.nannou.cc**](https://cpal-wasm-demo.nannou.cc)
+
+*NOTE: There's a tiny WAV embedded in the WASM, so it might take a couple
+seconds to download the audio on the first "Play". The demo seems to work nicely
+on desktop Firefox and Chrome but no luck on Safari or Edge just yet, we're yet
+to investigate.*
+
+Here is a [link to the repo](https://github.com/nannou-org/cpal_wasm_example)
+for this demo in case you would like to take a look.
 
 
 ### `sample` becomes DASP - Digital Audio Signal Processing
