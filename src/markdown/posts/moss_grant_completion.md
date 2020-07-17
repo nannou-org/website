@@ -214,18 +214,18 @@ course much more to be done! Some next steps that come to mind for CPAL include:
 
 During our work we also came across [cubeb](https://github.com/kinetiknz/cubeb).
 Like CPAL, cubeb is a cross-platform audio I/O library, though implemented in C
-and C++. The project is the audio backend currently in use by Firefox, and a an
+and C++. The project is the audio backend currently in use by Firefox, and an
 early effort at porting parts of the project have begun at
 [cubeb-rs](https://github.com/djg/cubeb-rs). We would love to see an exploration
 of how the two projects might collaborate and potentially combine efforts to
-achieve the goal of creating a nice pure-Rust cross-platform audio I/O
+achieve the goal of creating a nice, pure-Rust, cross-platform audio I/O
 experience.
 
 **Updating nannou**
 
-Of course, we are excited to land all of these recent improvements in `dasp` and
-`cpal` in nannou! In particular, this allows us to begin experimenting with
-running nannou sketches and applications on the web! [Stay
+Of course, we are excited to land all of these recent improvements in nannou! In
+particular, this allows us to begin experimenting with running nannou sketches
+and applications on the web! [Stay
 tuned](https://github.com/nannou-org/nannou/issues/7).
 
 
