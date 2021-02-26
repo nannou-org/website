@@ -70,7 +70,7 @@ const Footer = ({ data }) => {
 
       <div className={styles.copyright}>
         <p>
-          Copyright © {site_data.site.siteMetadata.author} 2020
+          Copyright © {site_data.site.siteMetadata.author} 2021
         </p>
       </div>
     </footer>

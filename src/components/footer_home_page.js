@@ -72,7 +72,7 @@ const FooterHomePage = ({ data }) => {
 
       <div className={styles.copyright}>
         <p>
-          Copyright © {site_data.site.siteMetadata.author} 2020
+          Copyright © {site_data.site.siteMetadata.author} 2021
           <br />
           Sketches by{" "}
           <a

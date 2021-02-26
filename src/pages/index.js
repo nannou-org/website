@@ -7,7 +7,7 @@ import FooterHomePage from "../components/footer_home_page"
 import SEO from "../components/seo"
 import styles from "./home.module.scss"
 
-import vulkan_icon from "../images/icons/vulkan_symbol.jpg" // Tell Webpack this JS file uses this image
+// import wgpu_icon from "../images/icons/wgpu.jpg" // Tell Webpack this JS file uses this image
 
 export const iconImage = graphql`
   fragment iconImage on File {
@@ -44,6 +44,9 @@ export const query = graphql`
           ...GatsbyImageSharpFixed
         }
       }
+    }
+    icon1: file(relativePath: { eq: "images/icons/wgpu.jpg" }) {
+      ...iconImage
     }
     icon2: file(relativePath: { eq: "images/icons/leds_symbol.jpg" }) {
       ...iconImage
@@ -120,8 +123,8 @@ const IndexPage = ({ data }, props) => {
 
         <div className={styles.nested_row2}>
           <div className={styles.icons}>
-            <div className={styles.vk_image}>
-              <img src={vulkan_icon} alt="Vulkan_icon" />
+            <div>
+              <Img fixed={data.icon1.childImageSharp.fixed} alt="WGPU_icon" />
             </div>
             <div>
               <Img fixed={data.icon2.childImageSharp.fixed} alt="LEDs_icon" />
