@@ -45,7 +45,7 @@ const FooterHomePage = ({ data }) => {
         </a>
 
         <a
-          href="https://communityinviter.com/apps/nannou/nannou-slack"
+          href="https://communityinviter.com/apps/nannou/join-nannou-slack"
           aria-label="Slack"
           target="_blank"
           rel="noopener noreferrer"
