@@ -43,7 +43,7 @@
     "inter-ui": "^3.12.1",
     "intersection-observer": "^0.7.0",
     "node-sass": "^4.13.1",
-    "prismjs": "^1.19.0",
+    "prismjs": "^1.27.0",
     "react": "^16.13.0",
     "react-custom-share": "^0.4.8",
     "react-dom": "^16.13.0",
