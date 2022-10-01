@@ -36,8 +36,8 @@ const FooterHomePage = ({ data }) => {
         </a>
 
         <a
-          href="https://matrix.to/#/+nannou:matrix.org"
-          aria-label="Matrix"
+          href="https://matrix.to/#/!YGozjjyCcWclgcRQUL:matrix.org?via=matrix.org&via=fairydust.space&via=systemli.org"
+          aria-label="Matrix Space"
           target="_blank"
           rel="noopener noreferrer"
         >

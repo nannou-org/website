@@ -275,7 +275,7 @@ const IndexPage = ({ data }, props) => {
             <a href="https://communityinviter.com/apps/nannou/nannou-slack">
               the nannou slack
             </a> or{" "}
-            <a href="https://matrix.to/#/+nannou:matrix.org">
+            <a href="https://matrix.to/#/!YGozjjyCcWclgcRQUL:matrix.org?via=matrix.org&via=fairydust.space&via=systemli.org">
               the nannou matrix community
             </a>
             .
